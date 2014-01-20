@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Ruixiang Du]]></title>
-  <link href="http://rxdu.me/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Web Development | Ruixiang Du]]></title>
+  <link href="http://rxdu.me/blog/categories/web-development/atom.xml" rel="self"/>
   <link href="http://rxdu.me/"/>
   <updated>2014-01-20T16:55:34-05:00</updated>
   <id>http://rxdu.me/</id>
@@ -90,54 +90,32 @@
 
 <h3>Basic Commands:</h3>
 
-<p>Create a new blog post:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_post["title"]</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Create a new page:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_page["title"]</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Generate blog:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Preview blog:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake preview</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Deploy blog to remote github repository (<em>master branch</em>)</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Push source folder to remote github repository (<em>source branch</em>)</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
-</span><span class='line'>git commit -m 'your message'
-</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[First Blog]]></title>
-    <link href="http://rxdu.me/blog/2014/01/19/first-blog/"/>
-    <updated>2014-01-19T14:48:01-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/19/first-blog</id>
-    <content type="html"><![CDATA[<p>This is the first blog for testing purpose.</p>
+<p>Create a new blog post:
+<code>
+rake new_post["title"]
+</code>
+Create a new page:
+<code>
+rake new_page["title"]
+</code>
+Generate blog:
+<code>
+rake generate
+</code>
+Preview blog:
+<code>
+rake preview
+</code>
+Deploy blog to remote github repository (<em>master branch</em>)
+<code>
+rake deploy
+</code>
+Push source folder to remote github repository (<em>source branch</em>)
+<code>
+git add .
+git commit -m 'your message'
+git push origin source
+</code></p>
 ]]></content>
   </entry>
   
