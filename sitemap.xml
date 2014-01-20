@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://rxdu.github.io/blog/2014/01/19/first-blog/</loc>
+        <loc>http://rxdu.me/blog/2014/01/19/first-blog/</loc>
         <lastmod>2014-01-19T14:49:22-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.github.io/</loc>
+        <loc>http://rxdu.me/</loc>
         <lastmod>2014-01-20T15:17:38-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.github.io/blog/archives/</loc>
+        <loc>http://rxdu.me/blog/archives/</loc>
         <lastmod>2014-01-19T14:49:22-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.github.io/blog/</loc>
+        <loc>http://rxdu.me/blog/</loc>
         <lastmod>2014-01-20T15:17:38-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.github.io/robots.txt</loc>
+        <loc>http://rxdu.me/robots.txt</loc>
         <lastmod>2014-01-19T14:25:32-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.github.io/about-me/</loc>
+        <loc>http://rxdu.me/about-me/</loc>
         <lastmod>2014-01-19T15:15:02-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.github.io/projects/</loc>
+        <loc>http://rxdu.me/projects/</loc>
         <lastmod>2014-01-20T15:17:38-05:00</lastmod>
     </url>
 </urlset>

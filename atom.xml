@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Ruixiang Du]]></title>
-  <link href="http://rxdu.github.io/atom.xml" rel="self"/>
-  <link href="http://rxdu.github.io/"/>
-  <updated>2014-01-20T15:20:38-05:00</updated>
-  <id>http://rxdu.github.io/</id>
+  <link href="http://rxdu.me/atom.xml" rel="self"/>
+  <link href="http://rxdu.me/"/>
+  <updated>2014-01-20T15:27:30-05:00</updated>
+  <id>http://rxdu.me/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[First Blog]]></title>
-    <link href="http://rxdu.github.io/blog/2014/01/19/first-blog/"/>
+    <link href="http://rxdu.me/blog/2014/01/19/first-blog/"/>
     <updated>2014-01-19T14:48:01-05:00</updated>
-    <id>http://rxdu.github.io/blog/2014/01/19/first-blog</id>
+    <id>http://rxdu.me/blog/2014/01/19/first-blog</id>
     <content type="html"><![CDATA[<p>This is the first blog for testing purpose.</p>
 ]]></content>
   </entry>
