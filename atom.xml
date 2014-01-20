@@ -4,7 +4,7 @@
   <title><![CDATA[Ruixiang Du]]></title>
   <link href="http://rxdu.me/atom.xml" rel="self"/>
   <link href="http://rxdu.me/"/>
-  <updated>2014-01-20T17:11:02-05:00</updated>
+  <updated>2014-01-20T17:17:12-05:00</updated>
   <id>http://rxdu.me/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
@@ -38,7 +38,7 @@
 
 <ul>
 <li>Set up github pages: <a href="http://pages.github.com/">http://pages.github.com/</a></li>
-<li>Deploy to github repository</li>
+<li>Deploy to github repository: <a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a></li>
 </ul>
 
 
