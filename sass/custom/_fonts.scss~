@@ -9,4 +9,4 @@
 //$header-title-font-family: "Futura", sans-serif;
 //$header-subtitle-font-family: "Futura", sans-serif;
 $header-title-font-family: 'Rock Salt', cursive;
-$header-subtitle-font-family: 'Grand Hotel', cursive;;
+$header-subtitle-font-family: 'Rock Salt', cursive;

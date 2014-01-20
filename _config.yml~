@@ -4,7 +4,7 @@
 
 url: http://rxdu.github.io
 title: Ruixiang Du
-subtitle: Share ideas and experience
+subtitle: ->     Share ideas and experience
 author: Ruixiang Du
 simple_search: http://google.com/search
 description:
@@ -91,7 +91,7 @@ delicious_count: 3
 
 # Disqus Comments
 disqus_short_name: rxdugit
-disqus_show_comment_count: true
+disqus_show_comment_count: false
 
 # Google Analytics
 google_analytics_tracking_id: UA-47255965-1
