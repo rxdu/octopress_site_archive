@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | Ruixiang Du]]></title>
   <link href="http://rxdu.me/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://rxdu.me/"/>
-  <updated>2014-01-21T22:07:33-05:00</updated>
+  <updated>2014-01-21T22:39:29-05:00</updated>
   <id>http://rxdu.me/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
@@ -12,6 +12,89 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Remote Desktop of Ubuntu 12.04]]></title>
+    <link href="http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/"/>
+    <updated>2014-01-21T22:19:51-05:00</updated>
+    <id>http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04</id>
+    <content type="html"><![CDATA[<p>Install xRDP package:
+<code>
+$sudo apt-get install xrdp
+</code>
+If you have problem connecting to the desktop, run:
+<code>
+$echo "gnome-session --session=ubuntu-2d" &gt; ~/.xsession
+$sudo apt-get install gnome-session-fallback
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Disable Guest Account in Ubuntu]]></title>
+    <link href="http://rxdu.me/blog/2014/01/21/disable-guest-account-in-ubuntu/"/>
+    <updated>2014-01-21T22:16:55-05:00</updated>
+    <id>http://rxdu.me/blog/2014/01/21/disable-guest-account-in-ubuntu</id>
+    <content type="html"><![CDATA[<p>Sometimes you may feel annoying to accidentally login to the guest account on you personal computer. But unlike Mac OS, you cannot disable this account directly from &ldquo;System Settings&rdquo;.</p>
+
+<p>You can get it by following these steps:</p>
+
+<ol>
+<li><p>Open a terminal and enter command:
+<code>
+$ gksudo gedit /etc/lightdm/lightdm.conf
+</code></p></li>
+<li><p>Add one line at the end of the file:
+<code>
+$ allow-guest=false
+</code></p></li>
+<li><p>Now you should see something like this in the file:
+<code>
+[SeatDefaults]
+greeter-session=unity-greeter
+user-session=ubuntu
+allow-guest=false
+</code></p></li>
+<li><p>Save and exit the file. Restart lightdm:
+<code>
+$ sudo restart lightdm
+</code></p></li>
+</ol>
+
+
+<p>Reference: <a href="http://www.ubuntugeek.com/ubuntu-tiphow-to-disable-guest-account-in-ubuntu-12-04precise.html">http://www.ubuntugeek.com/ubuntu-tiphow-to-disable-guest-account-in-ubuntu-12-04precise.html</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Install Eclipse in Ubuntu]]></title>
+    <link href="http://rxdu.me/blog/2014/01/21/install-eclipse-in-ubuntu/"/>
+    <updated>2014-01-21T22:11:45-05:00</updated>
+    <id>http://rxdu.me/blog/2014/01/21/install-eclipse-in-ubuntu</id>
+    <content type="html"><![CDATA[<p>First make sure you have installed JAVA in ubuntu to run Eclipse.
+<code>
+$ sudo add-apt-repository ppa:webupd8team/java
+$ sudo apt-get update
+$ sudo apt-get install oracle-java7-installer
+</code></p>
+
+<ol>
+<li>Download the latest Eclipse from its official website.</li>
+<li>Extract the files from the archive.</li>
+<li><p>Move the extracted folder to whereever you want to put it.
+<code>
+$ sudo mv eclipse /opt/
+</code></p></li>
+<li><p>Create a symlink in /usr/local/bin using
+<code>
+$ cd /usr/local/bin
+$ sudo ln -s /opt/eclipse/eclipse
+</code></p></li>
+<li><p>Now you should be able to run eclipse from a terminal.</p></li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Fix 'libgazebo_common.so.1 Not Found' Error on Ubuntu 12.04]]></title>

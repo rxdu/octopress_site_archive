@@ -9,7 +9,7 @@
   <meta name="author" content="Ruixiang Du">
 
   
-  <meta name="description" content="This article briefly illustrates how to upgrade the software of turtlebot to Ubuntu 12.04 &amp; ROS Groovy from earlier versions. Several issues that &hellip;">
+  <meta name="description" content="emIDE is a open source IDE for emebedded development. It integrates GCC toolchain and provides JLink support for debugging. Compared with other free &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +80,248 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/21/use-stm32-peripheral-library-with-emide/">Use STM32 Peripheral Library With emIDE</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-21T22:22:27-05:00" pubdate data-updated="true">Jan 21<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>emIDE is a open source IDE for emebedded development. It integrates GCC toolchain and provides JLink support for debugging. Compared with other free, open source alternatives, it&rsquo;s much easier to start with. This blog introduces how to configure emIDE to write programs for STM32 MCU with standard peripheral library. The MCU used in this example is <em>STM32F103T8</em>. The library used is <em>STM32F10x_StdPeriph_Lib_V3.5.0</em> from ST. And the debugger probe is JLink EDU.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/01/21/use-stm32-peripheral-library-with-emide/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/">Remote Desktop of Ubuntu 12.04</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-21T22:19:51-05:00" pubdate data-updated="true">Jan 21<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Install xRDP package:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$sudo apt-get install xrdp</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you have problem connecting to the desktop, run:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$echo "gnome-session --session=ubuntu-2d" &gt; ~/.xsession
+</span><span class='line'>$sudo apt-get install gnome-session-fallback</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/21/disable-guest-account-in-ubuntu/">Disable Guest Account in Ubuntu</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-21T22:16:55-05:00" pubdate data-updated="true">Jan 21<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Sometimes you may feel annoying to accidentally login to the guest account on you personal computer. But unlike Mac OS, you cannot disable this account directly from &ldquo;System Settings&rdquo;.</p>
+
+<p>You can get it by following these steps:</p>
+
+<ol>
+<li>Open a terminal and enter command:</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ gksudo gedit /etc/lightdm/lightdm.conf</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Add one line at the end of the file:</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ allow-guest=false</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Now you should see something like this in the file:</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[SeatDefaults]
+</span><span class='line'>greeter-session=unity-greeter
+</span><span class='line'>user-session=ubuntu
+</span><span class='line'>allow-guest=false</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Save and exit the file. Restart lightdm:</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo restart lightdm</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Reference: <a href="http://www.ubuntugeek.com/ubuntu-tiphow-to-disable-guest-account-in-ubuntu-12-04precise.html">http://www.ubuntugeek.com/ubuntu-tiphow-to-disable-guest-account-in-ubuntu-12-04precise.html</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/21/install-eclipse-in-ubuntu/">Install Eclipse in Ubuntu</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-21T22:11:45-05:00" pubdate data-updated="true">Jan 21<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>First make sure you have installed JAVA in ubuntu to run Eclipse.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo add-apt-repository ppa:webupd8team/java
+</span><span class='line'>$ sudo apt-get update
+</span><span class='line'>$ sudo apt-get install oracle-java7-installer</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Download the latest Eclipse from its official website.</li>
+<li>Extract the files from the archive.</li>
+<li>Move the extracted folder to whereever you want to put it.</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo mv eclipse /opt/ </span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Create a symlink in /usr/local/bin using</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd /usr/local/bin
+</span><span class='line'>$ sudo ln -s /opt/eclipse/eclipse</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Now you should be able to run eclipse from a terminal.</li>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -370,23 +612,23 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/01/21/use-stm32-peripheral-library-with-emide/">Use STM32 Peripheral Library With emIDE</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/">Remote Desktop of Ubuntu 12.04</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/21/disable-guest-account-in-ubuntu/">Disable Guest Account in Ubuntu</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/21/install-eclipse-in-ubuntu/">Install Eclipse in Ubuntu</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/01/21/software-upgrade-for-turtlebot/">Software Upgrade for Turtlebot</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04/">How to Fix &#8216;libgazebo_common.so.1 Not Found&#8217; Error on Ubuntu 12.04</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/20/basic-commands-of-ubuntu/">Basic Commands of Ubuntu</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file/">Use of IEEE Conference LaTex Template With .bib File</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/20/tips-for-the-use-of-octopress/">Tips for the Use of Octopress</a>
       </li>
     
   </ul>

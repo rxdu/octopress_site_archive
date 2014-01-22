@@ -5,11 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Gazebo - Ruixiang Du</title>
+  <title>Remote Desktop of Ubuntu 12.04 - Ruixiang Du</title>
   <meta name="author" content="Ruixiang Du">
 
   
-  <meta name="description" content="Category: Gazebo">
+  <meta name="description" content="Install xRDP package: 1
+$sudo apt-get install xrdp If you have problem connecting to the desktop, run: 1
+2
+$echo "gnome-session --session=ubuntu-2d &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rxdu.meblog/categories/gazebo">
+  <link rel="canonical" href="http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Ruixiang Du" type="application/atom+xml">
@@ -79,36 +82,105 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Gazebo</h1>
+    
+      <h1 class="entry-title">Remote Desktop of Ubuntu 12.04</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-21T22:19:51-05:00" pubdate data-updated="true">Jan 21<span>st</span>, 2014</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>Install xRDP package:</p>
 
-  
-  <h2>2014</h2>
-
-<article>
-  
-<h1><a href="/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04/">How to Fix 'libgazebo_common.so.1 Not Found' Error on Ubuntu 12.04</a></h1>
-<time datetime="2014-01-21T21:36:56-05:00" pubdate><span class='month'>Jan</span> <span class='day'>21</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/gazebo/'>Gazebo</a>, <a class='category' href='/blog/categories/ros/'>ROS</a>, <a class='category' href='/blog/categories/ubuntu/'>Ubuntu</a></span>
-</footer>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$sudo apt-get install xrdp</span></code></pre></td></tr></table></div></figure>
 
 
-</article>
+<p>If you have problem connecting to the desktop, run:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$echo "gnome-session --session=ubuntu-2d" &gt; ~/.xsession
+</span><span class='line'>$sudo apt-get install gnome-session-fallback</span></code></pre></td></tr></table></div></figure>
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Ruixiang Du</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-21T22:19:51-05:00" pubdate data-updated="true">Jan 21<span>st</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/raspberry-pi/'>Raspberry Pi</a>, <a class='category' href='/blog/categories/ubuntu/'>Ubuntu</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/" data-via="" data-counturl="http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/01/21/disable-guest-account-in-ubuntu/" title="Previous Post: Disable Guest Account in Ubuntu">&laquo; Disable Guest Account in Ubuntu</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/01/21/use-stm32-peripheral-library-with-emide/" title="Next Post: Use STM32 Peripheral Library with emIDE">Use STM32 Peripheral Library with emIDE &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -163,7 +235,10 @@
       var disqus_shortname = 'rxdugit';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/';
+        var disqus_url = 'http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
