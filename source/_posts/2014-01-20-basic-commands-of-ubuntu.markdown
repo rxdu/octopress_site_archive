@@ -4,8 +4,8 @@ title: "Basic Commands of Ubuntu"
 date: 2014-01-20 18:15:40 -0500
 comments: true
 categories: 
- -ubuntu
- -linux
+ - Ubuntu
+ - Linux
 ---
 
 1. Switch between GUI and virtual console:

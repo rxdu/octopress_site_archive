@@ -5,6 +5,25 @@ sharing: false
 footer: true
 ---
 
+## DARPA Robotics Challenge (DRC): Team WRECS, WPI 09/2013-Present
+
+- Worked on door task in the aspects of manipulation and door detection with point clouds
+- Developed a user interface for the operation of Boston Dynamics Atlas Robot in DRC Trials
+- Tested different strategies to finish task on both the real robot and robot in Gazebo simulation
+- Working on 3D perception of robots for manipulation tasks 
+
+{% img /images/projects/drc_door.jpg 295 %}
+{% img /images/projects/door_task_panel.png 450 %}
+
+## Robotic System for Use of Fall Risk Assessment in Home Environment, WPI 07/2013-Present
+
+- Worked out a robotic framework for home fall risk assessment
+- Implemented a web interface for Turtlebot2 platform to make the system accessible from a webpage 
+- Studying the navigation of robots in home environment and hazard detection for fall risk assessment   
+
+{% img /images/projects/fall_risk_turtle.jpg 240 %}
+{% img /images/projects/fall_risk_webpage.png 510 %}
+
 ## Intelligent Portable Aerial Surveillance System – IPASS, WPI 12/2012-05/2013
 
 -  Developed the dynamics model of the aircraft and simulated its control in   Matlab
@@ -20,7 +39,8 @@ footer: true
 - Implemented the position control algorithms on the Hummingbird quadrotor from AscTec
 - [Demo Video (Youtube):](http://www.youtube.com/watch?v=GF0DLWTfk3U&feature=c4-overview&list=UUZavD4SDX_YwDwgSEyUDrcQ)
 
-{% img /images/projects/autonomous_quadrotor.png 450 %}
+{% img /images/projects/autonomous_quadrotor.png 390 %}
+{% img /images/projects/humming_bird.JPG 340 %}
 
 ## 3D Visualization and Representation of a Simulated Robot, WPI 02/2012-08/2012
 
@@ -29,7 +49,8 @@ footer: true
 - Tested and embedded the program into the software system of the MRI Neurosurgery Robot
 - [Demo Video (Youtube):](http://www.youtube.com/watch?v=8LrmLvdZvYY&feature=c4-overview&list=UUZavD4SDX_YwDwgSEyUDrcQ)
 
-{% img /images/projects/vtk.png 550 %}
+{% img /images/projects/vtk.png 390 %}
+{% img /images/projects/vtk_robot.jpg 365 %}
 
 ## Undergraduate Graduation Project: Quadrotor Flight Attitude Control, 10/2010-06/2011
 
