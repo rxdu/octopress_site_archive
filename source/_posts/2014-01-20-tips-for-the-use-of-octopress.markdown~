@@ -3,7 +3,9 @@ layout: post
 title: "Tips for the Use of Octopress"
 date: 2014-01-20 15:36:18 -0500
 comments: true
-categories: [Web_Development, Octopress]
+categories: 
+ - Web Development
+ - Octopress
 ---
 
 In the past two days, I transferred my blog from several other places to Github Pages with Octopress. Since I'm a stranger to web development, I felt rather lost at the very beginning. But after you finish it, you will find it's not that difficult, at least not so hard to get a less customized Octopress-based blog. There are many good tutorials on the Internet so I see no point to write a new one. In this post, I mainly gather some resources I feel useful to finish the work.
@@ -43,7 +45,6 @@ In the past two days, I transferred my blog from several other places to Github 
   - [The OctopressThemes Blog](http://octopressthemes.com/blog/)
   - [Changing Octopress's Header](http://blog.bigdinosaur.org/changing-octopresss-header/)
   - [How to Customize Your Octopress Theme](http://aijazansari.com/2012/08/27/how-to-customize-octopress-theme/)
-  - [Octopress Top Categories Plugin](http://time.to.pullthepl.ug/blog/2012/8/20/octopress-top-categories-plugin/)
 
 ##Write Blog Posts
 

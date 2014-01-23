@@ -3,7 +3,10 @@ layout: post
 title: "How to fix 'libgazebo_common.so.1 not found' error on Ubuntu 12.04"
 date: 2014-01-21 21:36:56 -0500
 comments: true
-categories: [Ubuntu, Gazebo, ROS]
+categories: 
+ - Ubuntu
+ - Gazebo
+ - ROS
 ---
 
 Reference:[Gazebo Answers](http://webcache.googleusercontent.com/search?q=cache:BPYPhX2gWWsJ:answers.gazebosim.org/question/2338/on-ubuntu-1204-libgazebo_commonso1-not-found/+&cd=2&hl=en&ct=clnk&gl=us)

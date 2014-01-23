@@ -3,7 +3,9 @@ layout: post
 title: "Software Upgrade for Turtlebot"
 date: 2014-01-21 21:52:23 -0500
 comments: true
-categories: [ROS, Turtlebot]
+categories: 
+ - ROS
+ - Turtlebot
 ---
 
 This article briefly illustrates how to upgrade the software of turtlebot to Ubuntu 12.04 & ROS Groovy from earlier versions. Several issues that may occur during the upgrade are stated as the supplement of official tutorials from ROS wiki. 

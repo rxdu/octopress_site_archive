@@ -3,7 +3,9 @@ layout: post
 title: "Install Eclipse in Ubuntu"
 date: 2014-01-21 22:11:45 -0500
 comments: true
-categories: [Ubuntu, Eclipse]
+categories: 
+ - Ubuntu
+ - Eclipse
 ---
 
 First make sure you have installed JAVA in ubuntu to run Eclipse.

@@ -3,7 +3,9 @@ layout: post
 title: "Remote Desktop of Ubuntu 12.04"
 date: 2014-01-21 22:19:51 -0500
 comments: true
-categories: [Ubuntu, Raspberry_Pi]
+categories: 
+ - Ubuntu
+ - Raspberry Pi
 ---
 
 Install xRDP package:
