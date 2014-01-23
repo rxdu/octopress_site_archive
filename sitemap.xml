@@ -2,11 +2,11 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://rxdu.me/blog/2014/01/19/first-blog/</loc>
-        <lastmod>2014-01-20T17:30:45-05:00</lastmod>
+        <lastmod>2014-01-23T01:19:45-05:00</lastmod>
     </url>
     <url>
         <loc>http://rxdu.me/blog/2014/01/20/tips-for-the-use-of-octopress/</loc>
-        <lastmod>2014-01-20T17:17:04-05:00</lastmod>
+        <lastmod>2014-01-23T01:12:11-05:00</lastmod>
     </url>
     <url>
         <loc>
@@ -16,21 +16,21 @@
     </url>
     <url>
         <loc>http://rxdu.me/blog/2014/01/20/basic-commands-of-ubuntu/</loc>
-        <lastmod>2014-01-21T18:40:11-05:00</lastmod>
+        <lastmod>2014-01-22T23:38:15-05:00</lastmod>
     </url>
     <url>
         <loc>
             http://rxdu.me/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04/
         </loc>
-        <lastmod>2014-01-21T21:51:26-05:00</lastmod>
+        <lastmod>2014-01-22T23:39:56-05:00</lastmod>
     </url>
     <url>
         <loc>http://rxdu.me/blog/2014/01/21/software-upgrade-for-turtlebot/</loc>
-        <lastmod>2014-01-21T22:07:32-05:00</lastmod>
+        <lastmod>2014-01-22T23:40:46-05:00</lastmod>
     </url>
     <url>
         <loc>http://rxdu.me/blog/2014/01/21/install-eclipse-in-ubuntu/</loc>
-        <lastmod>2014-01-21T22:16:09-05:00</lastmod>
+        <lastmod>2014-01-22T23:40:11-05:00</lastmod>
     </url>
     <url>
         <loc>http://rxdu.me/blog/2014/01/21/disable-guest-account-in-ubuntu/</loc>
@@ -38,11 +38,19 @@
     </url>
     <url>
         <loc>http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/</loc>
-        <lastmod>2014-01-21T22:21:11-05:00</lastmod>
+        <lastmod>2014-01-22T23:40:31-05:00</lastmod>
     </url>
     <url>
         <loc>http://rxdu.me/blog/2014/01/21/use-stm32-peripheral-library-with-emide/</loc>
-        <lastmod>2014-01-21T22:39:28-05:00</lastmod>
+        <lastmod>2014-01-22T23:41:01-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://rxdu.me/interests/</loc>
+        <lastmod>2014-01-22T23:20:37-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://rxdu.me/category-list/</loc>
+        <lastmod>2014-01-23T01:22:34-05:00</lastmod>
     </url>
     <url>
         <loc>http://rxdu.me/</loc>
@@ -50,11 +58,11 @@
     </url>
     <url>
         <loc>http://rxdu.me/blog/archives/</loc>
-        <lastmod>2014-01-21T22:39:28-05:00</lastmod>
+        <lastmod>2014-01-23T01:19:45-05:00</lastmod>
     </url>
     <url>
         <loc>http://rxdu.me/blog/</loc>
-        <lastmod>2014-01-21T22:39:28-05:00</lastmod>
+        <lastmod>2014-01-23T01:19:45-05:00</lastmod>
     </url>
     <url>
         <loc>http://rxdu.me/robots.txt</loc>
