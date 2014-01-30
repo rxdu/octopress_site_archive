@@ -6,7 +6,7 @@ comments: true
 categories: [STM32, Embedded]
 ---
 
-emIDE is a open source IDE for emebedded development. It integrates GCC toolchain and provides JLink support for debugging. Compared with other free, open source alternatives, it's much easier to start with. This blog introduces how to configure emIDE to write programs for STM32 MCU with standard peripheral library. The MCU used in this example is *STM32F103T8*. The library used is *STM32F10x\_StdPeriph\_Lib\_V3.5.0* from ST. And the debugger probe is JLink EDU.
+emIDE is a open source IDE for embedded development. It integrates GCC toolchain and provides JLink support for debugging. Compared with other free, open source alternatives, it's much easier to start with. This blog introduces how to configure emIDE to write programs for STM32 MCU with standard peripheral library. The MCU used in this example is *STM32F103T8*. The library used is *STM32F10x\_StdPeriph\_Lib\_V3.5.0* from ST. And the debugger probe is JLink EDU.
 
 <!-- more -->
 
