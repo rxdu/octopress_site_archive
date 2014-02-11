@@ -5,6 +5,17 @@ sharing: false
 footer: true
 ---
 
+
+## Robotic System for Use of Fall Risk Assessment in Home Environment, WPI 07/2013-Present
+
+- Worked out a robotic framework for home fall risk assessment
+- Implemented a web interface for Turtlebot2 platform to make the system accessible from a webpage 
+- Studying the navigation of robots in home environment and hazard detection for fall risk assessment   
+
+{% img /images/projects/fall_risk_turtle.jpg 240 %}
+{% img /images/projects/fall_risk_webpage.png 510 %}
+
+
 ## DARPA Robotics Challenge (DRC): Team WRECS, WPI 09/2013-Present
 
 - Worked on door task in the aspects of manipulation and door detection with point clouds
@@ -15,14 +26,6 @@ footer: true
 {% img /images/projects/drc_door.jpg 295 %}
 {% img /images/projects/door_task_panel.png 450 %}
 
-## Robotic System for Use of Fall Risk Assessment in Home Environment, WPI 07/2013-Present
-
-- Worked out a robotic framework for home fall risk assessment
-- Implemented a web interface for Turtlebot2 platform to make the system accessible from a webpage 
-- Studying the navigation of robots in home environment and hazard detection for fall risk assessment   
-
-{% img /images/projects/fall_risk_turtle.jpg 240 %}
-{% img /images/projects/fall_risk_webpage.png 510 %}
 
 ## Intelligent Portable Aerial Surveillance System – IPASS, WPI 12/2012-05/2013
 
