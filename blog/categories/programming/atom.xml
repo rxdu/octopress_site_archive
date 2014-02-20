@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Programming | Ruixiang Du]]></title>
+  <link href="http://rxdu.me/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://rxdu.me/"/>
+  <updated>2014-02-20T13:45:22-05:00</updated>
+  <id>http://rxdu.me/</id>
+  <author>
+    <name><![CDATA[Ruixiang Du]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A Tutorial of CMAKE]]></title>
+    <link href="http://rxdu.me/blog/2014/02/20/a-tutorial-of-cmake/"/>
+    <updated>2014-02-20T13:37:41-05:00</updated>
+    <id>http://rxdu.me/blog/2014/02/20/a-tutorial-of-cmake</id>
+    <content type="html"><![CDATA[<p>CMAKE is widely used in many open-source projects. It&rsquo;s also necessary to lean about it for your own projects.</p>
+
+<p><a href="http://mirkokiefer.com/blog/2013/03/cmake-by-example/">CMake by Example</a> is a good tutorial to get started. Just a record for future reference.</p>
+]]></content>
+  </entry>
+  
+</feed>
