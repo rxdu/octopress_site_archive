@@ -4,7 +4,7 @@
   <title><![CDATA[Ruixiang Du]]></title>
   <link href="http://rxdu.me/atom.xml" rel="self"/>
   <link href="http://rxdu.me/"/>
-  <updated>2014-02-16T21:39:11-05:00</updated>
+  <updated>2014-02-23T22:58:11-05:00</updated>
   <id>http://rxdu.me/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Use Eclipse for CMAKE Projects]]></title>
+    <link href="http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/"/>
+    <updated>2014-02-23T22:50:31-05:00</updated>
+    <id>http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects</id>
+    <content type="html"><![CDATA[<p>Reference:
+<a href="http://www.vtk.org/Wiki/CMake%3aEclipse_UNIX_Tutorial">http://www.vtk.org/Wiki/CMake%3aEclipse_UNIX_Tutorial</a>
+<a href="http://www.vtk.org/Wiki/Eclipse_CDT4_Generator">http://www.vtk.org/Wiki/Eclipse_CDT4_Generator</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Tutorial of CMAKE]]></title>
+    <link href="http://rxdu.me/blog/2014/02/20/a-tutorial-of-cmake/"/>
+    <updated>2014-02-20T13:37:41-05:00</updated>
+    <id>http://rxdu.me/blog/2014/02/20/a-tutorial-of-cmake</id>
+    <content type="html"><![CDATA[<p>CMAKE is widely used in many open-source projects. It&rsquo;s also necessary to lean about it for your own projects.</p>
+
+<p><a href="http://mirkokiefer.com/blog/2013/03/cmake-by-example/">CMake by Example</a> is a good tutorial to get started. Just a record for future reference.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Use STM32 Peripheral Library With emIDE]]></title>

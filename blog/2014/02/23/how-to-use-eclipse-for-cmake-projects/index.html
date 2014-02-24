@@ -5,11 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Use of IEEE Conference LaTex Template With .bib File - Ruixiang Du</title>
+  <title>How to Use Eclipse for CMAKE Projects - Ruixiang Du</title>
   <meta name="author" content="Ruixiang Du">
 
   
-  <meta name="description" content="Recently I need to use the IEEE LaTex template (from http://www.ieee.org/conferences_events/conferences/publishing/templates.html) for a conference &hellip;">
+  <meta name="description" content="Reference:
+http://www.vtk.org/Wiki/CMake%3aEclipse_UNIX_Tutorial
+http://www.vtk.org/Wiki/Eclipse_CDT4_Generator
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rxdu.me/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file">
+  <link rel="canonical" href="http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Ruixiang Du" type="application/atom+xml">
@@ -84,7 +87,7 @@
   
   <header>
     
-      <h1 class="entry-title">Use of IEEE Conference LaTex Template With .bib File</h1>
+      <h1 class="entry-title">How to Use Eclipse for CMAKE Projects</h1>
     
     
       <p class="meta">
@@ -100,86 +103,16 @@
   
 
 
-<time datetime="2014-01-20T18:05:23-05:00" pubdate data-updated="true">Jan 20<span>th</span>, 2014</time>
+<time datetime="2014-02-23T22:50:31-05:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Recently I need to use the IEEE LaTex template (from <a href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html">http://www.ieee.org/conferences_events/conferences/publishing/templates.html</a>) for a conference paper. This template doesn&rsquo;t use a .bib file for the management of references unless you make some modifictions. In my first try to use it, I got this error during compiling:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Something's wrong--perhaps a missing \item. \end{thebibliography}</span></code></pre></td></tr></table></div></figure>
-
-
-<p> <!-- more -->
-I googled this issue and tried different solutions. Finally I figured it out how to fix this error (thanks to Velin&rsquo;s help). The following are the steps to make a successful compilation.</p>
-
-<ol>
-<li>Download both  <em>LaTeX Archive Contents</em> and <em>LaTeX (Bibliography Files)</em></li>
-<li>Extract both packages to the same folder</li>
-<li>Uncomment the line:</li>
-</ol>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>\usepackage{cite}</span></code></pre></td></tr></table></div></figure>
-
-
-<ol>
-<li>Uncomment the lines:</li>
-</ol>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>\bibliographystyle{IEEEtran}
-</span><span class='line'>\bibliography{IEEEabrv,../bib/paper}</span></code></pre></td></tr></table></div></figure>
-
-
-<p>specify the name and location of your .bib file. For example, change the second line above to:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>\bibliography{IEEEexample}</span></code></pre></td></tr></table></div></figure>
-
-
-<ol>
-<li>Comment the lines:</li>
-</ol>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>\begin{thebibliography}{1}
-</span><span class='line'>\bibitem{IEEEhowto:kopka}
-</span><span class='line'>H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-</span><span class='line'>0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-</span><span class='line'>\end{thebibliography}</span></code></pre></td></tr></table></div></figure>
-
-
-<ol>
-<li>Cite at least one item in the paper. For example, add</li>
-</ol>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>\cite{IEEEexample:article_typical} </span></code></pre></td></tr></table></div></figure>
-
-
-<p>at the end of the acknowledgement section.</p>
-
-<ol>
-<li>Compile the tex file and you should get no error.</li>
-</ol>
-
-
-<p><em>PS</em>: If you have got the error before you try the steps stated above, you should clean the files generated from the unsuccessfuly compilation. Otherwise you will get the same error even if you have made all modifications.</p>
-
-<p>You can also download the successfully compiled template from here: <a href="http://sdrv.ms/17ynR0g">http://sdrv.ms/17ynR0g</a></p>
+<div class="entry-content"><p>Reference:
+<a href="http://www.vtk.org/Wiki/CMake%3aEclipse_UNIX_Tutorial">http://www.vtk.org/Wiki/CMake%3aEclipse_UNIX_Tutorial</a>
+<a href="http://www.vtk.org/Wiki/Eclipse_CDT4_Generator">http://www.vtk.org/Wiki/Eclipse_CDT4_Generator</a></p>
 </div>
 
 
@@ -202,12 +135,12 @@ I googled this issue and tried different solutions. Finally I figured it out how
   
 
 
-<time datetime="2014-01-20T18:05:23-05:00" pubdate data-updated="true">Jan 20<span>th</span>, 2014</time>
+<time datetime="2014-02-23T22:50:31-05:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/latex/'>LaTex</a>
+    <a class='category' href='/blog/categories/c-slash-c-plus-plus/'>C/C++</a>, <a class='category' href='/blog/categories/programming/'>Programming</a>
   
 </span>
 
@@ -216,7 +149,7 @@ I googled this issue and tried different solutions. Finally I figured it out how
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://rxdu.me/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file/" data-via="" data-counturl="http://rxdu.me/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/" data-via="" data-counturl="http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/" >Tweet</a>
   
   
   
@@ -225,10 +158,8 @@ I googled this issue and tried different solutions. Finally I figured it out how
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/01/20/tips-for-the-use-of-octopress/" title="Previous Post: Tips for the Use of Octopress">&laquo; Tips for the Use of Octopress</a>
+        <a class="basic-alignment left" href="/blog/2014/02/20/a-tutorial-of-cmake/" title="Previous Post: A Tutorial of CMAKE">&laquo; A Tutorial of CMAKE</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/01/20/basic-commands-of-ubuntu/" title="Next Post: Basic Commands of Ubuntu">Basic Commands of Ubuntu &raquo;</a>
       
     </p>
   </footer>
@@ -294,8 +225,8 @@ I googled this issue and tried different solutions. Finally I figured it out how
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://rxdu.me/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file/';
-        var disqus_url = 'http://rxdu.me/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file/';
+        var disqus_identifier = 'http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/';
+        var disqus_url = 'http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/';
         var disqus_script = 'embed.js';
       
     (function () {
