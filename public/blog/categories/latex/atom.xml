@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: LaTex | Ruixiang Du]]></title>
+  <link href="http://rxdu.me/blog/categories/latex/atom.xml" rel="self"/>
+  <link href="http://rxdu.me/"/>
+  <updated>2014-02-20T17:33:15-05:00</updated>
+  <id>http://rxdu.me/</id>
+  <author>
+    <name><![CDATA[Ruixiang Du]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Use of IEEE Conference LaTex Template With .bib File]]></title>
+    <link href="http://rxdu.me/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file/"/>
+    <updated>2014-01-20T18:05:23-05:00</updated>
+    <id>http://rxdu.me/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file</id>
+    <content type="html"><![CDATA[<p>Recently I need to use the IEEE LaTex template (from <a href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html">http://www.ieee.org/conferences_events/conferences/publishing/templates.html</a>) for a conference paper. This template doesn&rsquo;t use a .bib file for the management of references unless you make some modifictions. In my first try to use it, I got this error during compiling:
+<code>
+Something's wrong--perhaps a missing \item. \end{thebibliography}
+</code>
+ <!-- more -->
+I googled this issue and tried different solutions. Finally I figured it out how to fix this error (thanks to Velin&rsquo;s help). The following are the steps to make a successful compilation.</p>
+
+<ol>
+<li>Download both  <em>LaTeX Archive Contents</em> and <em>LaTeX (Bibliography Files)</em></li>
+<li>Extract both packages to the same folder</li>
+<li><p>Uncomment the line:
+<code>
+\usepackage{cite}
+</code></p></li>
+<li><p>Uncomment the lines:
+<code>
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,../bib/paper}
+</code>
+specify the name and location of your .bib file. For example, change the second line above to:
+<code>
+\bibliography{IEEEexample}
+</code></p></li>
+<li><p>Comment the lines:
+<code>
+\begin{thebibliography}{1}
+\bibitem{IEEEhowto:kopka}
+H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+\end{thebibliography}
+</code></p></li>
+<li><p>Cite at least one item in the paper. For example, add
+<code>
+\cite{IEEEexample:article_typical}
+</code>
+at the end of the acknowledgement section.</p></li>
+<li><p>Compile the tex file and you should get no error.</p></li>
+</ol>
+
+
+<p><em>PS</em>: If you have got the error before you try the steps stated above, you should clean the files generated from the unsuccessfuly compilation. Otherwise you will get the same error even if you have made all modifications.</p>
+
+<p>You can also download the successfully compiled template from here: <a href="http://sdrv.ms/17ynR0g">http://sdrv.ms/17ynR0g</a></p>
+]]></content>
+  </entry>
+  
+</feed>

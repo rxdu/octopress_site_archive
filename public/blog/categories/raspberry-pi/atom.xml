@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Raspberry_Pi | Ruixiang Du]]></title>
+  <link href="http://rxdu.me/blog/categories/raspberry-pi/atom.xml" rel="self"/>
+  <link href="http://rxdu.me/"/>
+  <updated>2014-02-20T17:33:15-05:00</updated>
+  <id>http://rxdu.me/</id>
+  <author>
+    <name><![CDATA[Ruixiang Du]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Remote Desktop of Ubuntu 12.04]]></title>
+    <link href="http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/"/>
+    <updated>2014-01-21T22:19:51-05:00</updated>
+    <id>http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04</id>
+    <content type="html"><![CDATA[<p>Install xRDP package:
+<code>
+$sudo apt-get install xrdp
+</code>
+If you have problem connecting to the desktop, run:
+<code>
+$echo "gnome-session --session=ubuntu-2d" &gt; ~/.xsession
+$sudo apt-get install gnome-session-fallback
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>
