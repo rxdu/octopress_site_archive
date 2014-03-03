@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Programming | Ruixiang Du]]></title>
   <link href="http://rxdu.me/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://rxdu.me/"/>
-  <updated>2014-02-20T17:33:15-05:00</updated>
+  <updated>2014-03-02T20:51:03-05:00</updated>
   <id>http://rxdu.me/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Use Eclipse for CMAKE Projects]]></title>
+    <link href="http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/"/>
+    <updated>2014-02-23T22:50:31-05:00</updated>
+    <id>http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects</id>
+    <content type="html"><![CDATA[<p>Reference:</p>
+
+<p><a href="http://www.vtk.org/Wiki/CMake%3aEclipse_UNIX_Tutorial">http://www.vtk.org/Wiki/CMake%3aEclipse_UNIX_Tutorial</a>
+<a href="http://www.vtk.org/Wiki/Eclipse_CDT4_Generator">http://www.vtk.org/Wiki/Eclipse_CDT4_Generator</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A Tutorial of CMAKE]]></title>

@@ -46,27 +46,35 @@
     </url>
     <url>
         <loc>http://rxdu.me/blog/2014/02/20/a-tutorial-of-cmake/</loc>
-        <lastmod>2014-02-20T13:45:21-05:00</lastmod>
+        <lastmod>2014-03-02T18:46:32-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/archives/</loc>
-        <lastmod>2014-02-20T13:45:21-05:00</lastmod>
+        <loc>http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/</loc>
+        <lastmod>2014-03-02T18:46:32-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/</loc>
-        <lastmod>2014-02-20T13:45:21-05:00</lastmod>
+        <loc>http://rxdu.me/blog/2014/03/02/setting-up-two-custom-domains-for-github-pages/</loc>
+        <lastmod>2014-03-02T20:51:03-05:00</lastmod>
     </url>
     <url>
         <loc>http://rxdu.me/about-me/</loc>
         <lastmod>2014-01-21T19:51:48-05:00</lastmod>
     </url>
     <url>
+        <loc>http://rxdu.me/interests/</loc>
+        <lastmod>2014-01-22T23:20:36-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://rxdu.me/category-list/</loc>
         <lastmod>2014-01-23T01:38:14-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/</loc>
-        <lastmod>2014-01-21T19:57:16-05:00</lastmod>
+        <loc>http://rxdu.me/blog/</loc>
+        <lastmod>2014-03-02T20:51:03-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://rxdu.me/blog/archives/</loc>
+        <lastmod>2014-03-02T20:51:03-05:00</lastmod>
     </url>
     <url>
         <loc>http://rxdu.me/robots.txt</loc>
@@ -74,10 +82,10 @@
     </url>
     <url>
         <loc>http://rxdu.me/projects/</loc>
-        <lastmod>2014-02-20T13:28:07-05:00</lastmod>
+        <lastmod>2014-03-02T18:46:32-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/interests/</loc>
-        <lastmod>2014-01-22T23:20:36-05:00</lastmod>
+        <loc>http://rxdu.me/</loc>
+        <lastmod>2014-01-21T19:57:16-05:00</lastmod>
     </url>
 </urlset>

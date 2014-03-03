@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Web_Development | Ruixiang Du]]></title>
   <link href="http://rxdu.me/blog/categories/web-development/atom.xml" rel="self"/>
   <link href="http://rxdu.me/"/>
-  <updated>2014-02-20T17:33:15-05:00</updated>
+  <updated>2014-03-02T20:51:03-05:00</updated>
   <id>http://rxdu.me/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Setting Up Two Custom Domains for Github Pages]]></title>
+    <link href="http://rxdu.me/blog/2014/03/02/setting-up-two-custom-domains-for-github-pages/"/>
+    <updated>2014-03-02T20:20:01-05:00</updated>
+    <id>http://rxdu.me/blog/2014/03/02/setting-up-two-custom-domains-for-github-pages</id>
+    <content type="html"><![CDATA[<p>According to <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">offical tutorial</a>, &ldquo;You can only have one custom domain for any given set of Pages. If you want multiple domains to point to the same Pages, you will need to use a service that can redirect the other domains to your Pages domain.&rdquo;</p>
+
+<p>This post gives an example about how to do the redirection with two domain names from <a href="https://www.namecheap.com/">namecheap</a> and <a href="https://www.name.com/">name.com</a> respectively.</p>
+
+<!-- more -->
+
+
+<p>My personal feeling is that namecheap provides better user experience in managing your domains. You can get what you want very easily and their <a href="https://www.namecheap.com/support/knowledgebase/article/settingup_hostrecords">help page</a> is indeed very helpful and can save you some time searching on the Internet. Name.com also has a nice-looking management interface, but it seems they don&rsquo;t provide as many functionalities as namecheap does. I can get the redirection working without any pain but I failed to do the same thing on name.com. (I&rsquo;m not a person who is familiar with web development nor network. If you are one, maybe you could ignore this comment.)</p>
+
+<p>In this example, I use domainA(&ldquo;rdu.im&rdquo; from name.com) as the main method to access my github pages and use domainB(&ldquo;rxdu.me&rdquo; from namecheap) to do the redirection.</p>
+
+<ol>
+<li><p>Add a CNAME file, which includes your primary domain name, to your github page repository</p></li>
+<li><p>On namecheap:
+From the &ldquo;Host Management&rdquo; section on the left side, go to &ldquo;All Host Records&rdquo;. Add just one record:</p></li>
+</ol>
+
+
+<p>HOST NAME: @; IP ADDRESS/URL:<a href="http://rxdu.github.io;">http://rxdu.github.io;</a> RECORD TYPE:redirect; TTL:1800</p>
+
+<p><img src="/images/posts/namecheap_config.png" width="850"></p>
+
+<ol>
+<li>On name.com:
+Go to DNS Record and add two records:</li>
+</ol>
+
+
+<p>Type:A; Host:rdu.im; Answer:192.30.252.153; TTL:1800</p>
+
+<p>Type:A; Host:rdu.im; Answer:192.30.252.154; TTL:1800</p>
+
+<p><img src="/images/posts/namecom_config.png" width="850"></p>
+
+<p>After finishing the above 3 three steps, you should be all set. Wait for some time and check if both of the domains work properly.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tips for the Use of Octopress]]></title>
