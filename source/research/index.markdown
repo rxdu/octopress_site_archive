@@ -11,5 +11,7 @@ To be added...
 
 ###Publications
 
-- **Conference:** Ruixiang Du, Taskin Padir, "Image Stitching Techniques for An Intelligent Portable Aerial Surveillance System," IEEE TePRA, 2014 ([pdf]())
-- **Master Thesis:** An Intelligent Portable Aerial Surveillance System:Modeling and Image Stitching ([pdf](http://www.wpi.edu/Pubs/ETD/Available/etd-052913-120432/unrestricted/rdu.pdf))
+- **Conference:** 
+Ruixiang Du, Taskin Padir, "Image Stitching Techniques for An Intelligent Portable Aerial Surveillance System," IEEE TePRA, 2014 ([pdf]())
+- **Master Thesis:** 
+Ruixiang Du, "An Intelligent Portable Aerial Surveillance System:Modeling and Image Stitching", Worcester Polytechnic Institute, 2013 ([pdf](http://www.wpi.edu/Pubs/ETD/Available/etd-052913-120432/unrestricted/rdu.pdf))
