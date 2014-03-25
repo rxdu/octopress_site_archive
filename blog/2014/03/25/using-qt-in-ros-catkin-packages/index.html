@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Using QT in ROS Catkin Packages - Ruixiang Du</title>
+  <meta name="author" content="Ruixiang Du">
+
+  
+  <meta name="description" content="Rviz plugins are basically QT widgets. CMakeLists.txt of the ROS package using QT needs to be modified accordingly for the compilation. ROS wiki &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rxdu.me/blog/2014/03/25/using-qt-in-ros-catkin-packages">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Ruixiang Du" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-47255965-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Ruixiang Du</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rxdu.me" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">About Me</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/research">Research</a></li>
+  <li><a href="/blog">Tech Blog</a></li>
+  <li><a href="/category-list">Categories</a></li>  
+  <li><a href="/blog/archives">Archives</a></li>  
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Using QT in ROS Catkin Packages</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-25T18:14:35-04:00" pubdate data-updated="true">Mar 25<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Rviz plugins are basically QT widgets. CMakeLists.txt of the ROS package using QT needs to be modified accordingly for the compilation. ROS wiki provides several tutorials/examples about how to write a plugin for Rviz and how to configure the package. However, these materials are mainly for rosbuild. This article introduces how to use QT in ROS catkin packages, in other words, how to use QT for a package of ROS Groovy/Hydro or later. This article shows how to write the CMakeLists.txt for a package, which uses librviz for visualization.</p>
+
+<!-- more -->
+
+
+<p>The example package includes the following files:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>++ rviz_gui_package
+</span><span class='line'> ++ src
+</span><span class='line'>   +- rviz_gui.cpp
+</span><span class='line'>   +- rviz_gui.h
+</span><span class='line'>   +- rviz_gui.ui
+</span><span class='line'>   +- main.cpp
+</span><span class='line'> +- CMakeLists.txt
+</span><span class='line'> +- package.xml</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To compile a QT executable widget, you need to add the following to your CMakeLists.txt:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>find_package(Qt4 COMPONENTS QtCore QtGui REQUIRED)
+</span><span class='line'>
+</span><span class='line'>include(${QT_USE_FILE})
+</span><span class='line'>add_definitions(-DQT_NO_KEYWORDS)
+</span><span class='line'>add_definitions(${QT_DEFINITIONS})
+</span><span class='line'>
+</span><span class='line'>set(HEADER_FILES 
+</span><span class='line'>  src/rviz_gui.h
+</span><span class='line'>  include/myviz.h
+</span><span class='line'>)
+</span><span class='line'>
+</span><span class='line'>set(SOURCE_FILES
+</span><span class='line'>  src/rviz_gui.cpp
+</span><span class='line'>  src/main.cpp
+</span><span class='line'>  ${MOC_FILES}
+</span><span class='line'>)
+</span><span class='line'>
+</span><span class='line'>set(FORM_FILES 
+</span><span class='line'>  src/rviz_gui.ui
+</span><span class='line'>)
+</span><span class='line'>
+</span><span class='line'>QT4_WRAP_CPP(MOC_SRC_H
+</span><span class='line'>  ${HEADER_FILES}
+</span><span class='line'>)
+</span><span class='line'>
+</span><span class='line'>QT4_WRAP_UI(MOC_GUI_H 
+</span><span class='line'>  ${FORM_FILES}
+</span><span class='line'>)
+</span><span class='line'>
+</span><span class='line'>include_directories(${CMAKE_CURRENT_BINARY_DIR})
+</span><span class='line'>
+</span><span class='line'>add_executable(rviz_gui ${SOURCE_FILES} ${MOC_SRC_H} ${MOC_GUI_H})
+</span><span class='line'>target_link_libraries(rviz_gui ${QT_LIBRARIES} ${catkin_LIBRARIES})</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To understand why you should do this, you need to understand the QT build system. For detailed illustration, read this <a href="http://qt-project.org/quarterly/view/using_cmake_to_build_qt_projects">Document</a> from qt-project.org. <strong>The image shown below is also from this document</strong>. I include it here just for convinence of reference.</p>
+
+<p><img src="/images/posts/qt-build-system.png" width="600"></p>
+
+<p>The basic idea of the above code snippet,</p>
+
+<ul>
+<li>Line 1-4 set up the environment.</li>
+<li>Line 7-20 tells the build system the source/header/form files for the qt application.</li>
+<li>Line 22-24 correspond to &ldquo;generated moc_*.cpp&rdquo; block in the above image.</li>
+<li>Line 26-28 correspond to &ldquo;generated ui_*.h&rdquo; block in the above image.</li>
+<li>No resource file is used in this example, so &ldquo;Resource files&rdquo; and &ldquo;generated qrc_*.cpp&rdquo; blocks are not used.</li>
+<li>Line 30, according to <a href="http://qt-project.org/quarterly/view/using_cmake_to_build_qt_projects">Document</a>, &ldquo;As all intermediate files are generated outside the source tree, the header file generated by uic will not be located by the compiler. In order to handle this, the build directory needs to be added to the list of include directories.&rdquo;</li>
+<li>Line 32-33 compile and link executables based on all user files and Qt intermediate files.</li>
+</ul>
+
+
+<p>The complete copy of <a href="https://github.com/rxdu/FallRiskProjectROS/blob/hydro_devel/fallrisk_gui/fallrisk_rviz_gui/CMakeLists.txt"><strong>CMakeLists.txt</strong></a> (modified from the original file generated by command catkin_create_pkg)</p>
+
+<h5>Reference:</h5>
+
+<ol>
+<li><a href="http://qt-project.org/quarterly/view/using_cmake_to_build_qt_projects">Using CMake to Build Qt Projects</a></li>
+<li><a href="http://www.briangoldfain.com/2013/02/using-qt-in-a-ros-catkin-package/">Using QT in a ROS Catkin Package</a></li>
+</ol>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ruixiang Du</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-25T18:14:35-04:00" pubdate data-updated="true">Mar 25<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/programming/'>Programming</a>, <a class='category' href='/blog/categories/ros/'>ROS</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://rxdu.me/blog/2014/03/25/using-qt-in-ros-catkin-packages/" data-via="" data-counturl="http://rxdu.me/blog/2014/03/25/using-qt-in-ros-catkin-packages/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/03/24/install-java-plugin-for-web-browers-on-ubuntu/" title="Previous Post: Install Java Plugin for Web Browers on Ubuntu">&laquo; Install Java Plugin for Web Browers on Ubuntu</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/03/25/using-qt-in-ros-catkin-packages/">Using QT in ROS Catkin Packages</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/24/install-java-plugin-for-web-browers-on-ubuntu/">Install Java Plugin for Web Browers on Ubuntu</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/02/setting-up-two-custom-domains-for-github-pages/">Setting Up Two Custom Domains for Github Pages</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/">How to Use Eclipse for CMAKE Projects</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/02/20/a-tutorial-of-cmake/">A Tutorial of CMAKE</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Top Categories</h1>
+    <ul id="top-category-list"><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/programming'>Programming (3)</a></li><li><a href='/blog/categories/ros'>ROS (3)</a></li><li><a href='/blog/categories/web-development'>Web_Development (2)</a></li><li><a href='/blog/categories/raspberry-pi'>Raspberry_Pi (1)</a></li><li><a href='/blog/categories/linux'>Linux (1)</a></li><li><a href='/blog/categories/octopress'>Octopress (1)</a></li><li><a href='/blog/categories/ubuntu'>ubuntu (1)</a></li><li><a href='/blog/categories/embedded'>Embedded (1)</a></li><li><a href='/blog/categories/stm32'>STM32 (1)</a></li></ul>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Ruixiang Du -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rxdugit';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rxdu.me/blog/2014/03/25/using-qt-in-ros-catkin-packages/';
+        var disqus_url = 'http://rxdu.me/blog/2014/03/25/using-qt-in-ros-catkin-packages/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
