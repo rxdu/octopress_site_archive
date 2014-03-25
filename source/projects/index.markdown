@@ -5,7 +5,6 @@ sharing: false
 footer: true
 ---
 
-
 ## Robotic System for Use of Fall Risk Assessment in Home Environment, WPI 07/2013-Present
 
 - Worked out a robotic framework for home fall risk assessment
