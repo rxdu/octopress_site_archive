@@ -4,7 +4,7 @@
   <title><![CDATA[Ruixiang Du]]></title>
   <link href="http://rxdu.me/atom.xml" rel="self"/>
   <link href="http://rxdu.me/"/>
-  <updated>2014-03-09T00:10:23-05:00</updated>
+  <updated>2014-03-24T23:09:22-04:00</updated>
   <id>http://rxdu.me/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
@@ -12,6 +12,61 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Install Java Plugin for Web Browers on Ubuntu]]></title>
+    <link href="http://rxdu.me/blog/2014/03/24/install-java-plugin-for-web-browers-on-ubuntu/"/>
+    <updated>2014-03-24T22:39:20-04:00</updated>
+    <id>http://rxdu.me/blog/2014/03/24/install-java-plugin-for-web-browers-on-ubuntu</id>
+    <content type="html"><![CDATA[<p>Java plugin is required to download certificates for WPI wireless. It&rsquo;s often required for other applications. Here is a summary of how to do this on Ubuntu.</p>
+
+<p>1.Install Java Runtime Environment 64bit</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo add-apt-repository ppa:webupd8team/java
+</span><span class='line'>$ sudo apt-get update
+</span><span class='line'>$ sudo apt-get install oracle-java7-installer</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- more -->
+
+
+<p>2.Enable Java Plugin for Chrome 64bit</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo mkdir /opt/google/chrome/plugins
+</span><span class='line'>cd /opt/google/chrome/plugins
+</span><span class='line'>sudo ln -s /usr/lib/jvm/java-7-oracle/jre/lib/amd64/libnpjp2.so</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3.Enable Java Plugin for Mozilla Firefox 64bit</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd /usr/lib/mozilla/plugins
+</span><span class='line'>sudo mkdir /usr/lib/mozilla/plugins
+</span><span class='line'>sudo ln -s /usr/lib/jvm/java-7-oracle/jre/lib/amd64/libnpjp2.so</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Note</strong>:</p>
+
+<p>If you don&rsquo;t want to install JRE in the way mentioned above, make sure you give the right path for the command:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ln -s /&lt;right-path-of-libnpjp2-so&gt;/libnpjp2.so</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Reference:
+<a href="http://m.wikihow.com/Enable-Oracle-Java-in-Your-Web-Browsers-on-Ubuntu-Linux">How to Enable Oracle Java in Your Web Browsers on Ubuntu Linux</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Setting Up Two Custom Domains for Github Pages]]></title>
