@@ -11,8 +11,8 @@ footer: true
 - Implemented a web interface for Turtlebot2 platform to make the system accessible from a webpage 
 - Studying the navigation of robots in home environment and hazard detection for fall risk assessment   
 
-{% img /images/projects/fall_risk_turtle.jpg 240 %}
-{% img /images/projects/fall_risk_webpage.png 510 %}
+{% img /images/projects/fall_risk_turtle.jpg 280 %}
+{% img /images/projects/web_interface.png 465 %}
 
 
 ## DARPA Robotics Challenge (DRC): Team WRECS, WPI 09/2013-12/2013

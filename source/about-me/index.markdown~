@@ -1,11 +1,9 @@
 ---
 layout: page
 title: "About Me"
-date: 2014-01-19 14:59
-comments: true
-sharing: true
+comments: false
+sharing: false
 footer: true
 ---
 
-I am a PhD student in Robotics Engineering at Worcester Polytechnic Institute (WPI). I received my Master's degree in May, 2013 and formally joined in 
-Robotics and Intelligent Vehicles Research Laboratory (RIVeR Lab) later in June. I'm interested in the control and navigation of mobile robots and my advisor is Professor Taskin Padir.
+Currently I am a PhD student in Robotics Engineering at Worcester Polytechnic Institute (WPI). I received my Master's degree from WPI in May, 2013 and formally joined in Robotics and Intelligent Vehicles Research Laboratory (RIVeR Lab) as a PhD student later in June. Before my study in the United States, I majored in Automation at North China Electric Power University and received my bachelor's degree in Junly, 2011. I'm interested in human-in-the-loop control of assistive robots and human-robot interaction. My advisor is Professor Taskin Padir.
