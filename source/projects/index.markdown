@@ -15,12 +15,11 @@ footer: true
 {% img /images/projects/fall_risk_webpage.png 510 %}
 
 
-## DARPA Robotics Challenge (DRC): Team WRECS, WPI 09/2013-Present
+## DARPA Robotics Challenge (DRC): Team WRECS, WPI 09/2013-12/2013
 
 - Worked on door task in the aspects of manipulation and door detection with point clouds
 - Developed a user interface for the operation of Boston Dynamics Atlas Robot in DRC Trials
 - Tested different strategies to finish task on both the real robot and robot in Gazebo simulation
-- Working on 3D perception of robots for manipulation tasks 
 
 {% img /images/projects/drc_door.jpg 295 %}
 {% img /images/projects/door_task_panel.png 450 %}
