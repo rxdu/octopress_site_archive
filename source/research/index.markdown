@@ -17,7 +17,7 @@ To be added...
 
 **Workshop:**
 
-* Ruixiang Du, Vinayak Jagtap, Yanren Long, Oke Onwuka, Taskin Padir, "Robotics Enabled In-Home Environment Screening for Fall Risks", ACM MobiSys 2014 - Mobile Augmented Reality and Robotic Technology-based Systems (MARS), accepted ([pdf]())
+* Ruixiang Du, Vinayak Jagtap, Yanren Long, Oke Onwuka, Taskin Padir, "Robotics Enabled In-Home Environment Screening for Fall Risks", ACM MobiSys 2014 - Proceedings of the 2014 workshop on Mobile augmented reality and robotic technology-based systems, Pages 9-12 ([pdf]())
 
 **Master Thesis:** 
 

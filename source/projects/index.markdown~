@@ -5,17 +5,19 @@ sharing: false
 footer: true
 ---
 
-## Robotic System for Use of Fall Risk Assessment in Home Environment, WPI 07/2013-Present
+## DARPA Robotics Challenge(DRC) Finals: Team WPI-CMU, WPI 07/2014-Present
+
+## Robotic System for Use of Fall Risk Assessment in Home Environment, WPI 07/2013-05/2014
 
 - Worked out a robotic framework for home fall risk assessment
 - Implemented a web interface for Turtlebot2 platform to make the system accessible from a webpage 
-- Studying the navigation of robots in home environment and hazard detection for fall risk assessment   
+- Studyed the navigation of robots in home environment and hazard detection for fall risk assessment   
 
 {% img /images/projects/fall_risk_turtle.jpg 280 %}
-{% img /images/projects/web_interface.png 455 %}
+{% img /images/projects/web_interface.png 465 %}
 
 
-## DARPA Robotics Challenge (DRC): Team WRECS, WPI 09/2013-12/2013
+## DARPA Robotics Challenge(DRC) Trials: Team WRECS, WPI 09/2013-12/2013
 
 - Worked on door task in the aspects of manipulation and door detection with point clouds
 - Developed a user interface for the operation of Boston Dynamics Atlas Robot in DRC Trials
