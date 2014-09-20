@@ -36,7 +36,7 @@ In the past two days, I transferred my blog from several other places to Github 
 
 ##Customization
 
-- Official documents are good materials to start: [template](http://octopress.org/docs/theme/template/), [stypes](http://octopress.org/docs/theme/styles/)
+- Official documents are good materials to start: [template](http://octopress.org/docs/theme/template/), [styles](http://octopress.org/docs/theme/styles/)
 - Available themes: [Opthemes](opthemes.com), [list by imathis](https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes)
 - Third party plugins [list by imathis](https://github.com/imathis/octopress/wiki/3rd-party-plugins)
 - Useful blogs/articles:

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Ruixiang Du]]></title>
   <link href="http://rxdu.me/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://rxdu.me/"/>
-  <updated>2014-08-22T01:43:37-04:00</updated>
+  <updated>2014-09-20T16:36:24-04:00</updated>
   <id>http://rxdu.me/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
@@ -62,7 +62,7 @@
 <h2>Customization</h2>
 
 <ul>
-<li>Official documents are good materials to start: <a href="http://octopress.org/docs/theme/template/">template</a>, <a href="http://octopress.org/docs/theme/styles/">stypes</a></li>
+<li>Official documents are good materials to start: <a href="http://octopress.org/docs/theme/template/">template</a>, <a href="http://octopress.org/docs/theme/styles/">styles</a></li>
 <li>Available themes: <a href="opthemes.com">Opthemes</a>, <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">list by imathis</a></li>
 <li>Third party plugins <a href="https://github.com/imathis/octopress/wiki/3rd-party-plugins">list by imathis</a></li>
 <li>Useful blogs/articles:
