@@ -3,7 +3,7 @@ layout: post
 title: "Install Java Plugin for Web Browers on Ubuntu"
 date: 2014-03-24 22:39:20 -0400
 comments: true
-categories: [ubuntu]
+categories: [Ubuntu]
 ---
 
 Java plugin is required to download certificates for WPI wireless. It's often required for other applications. Here is a summary of how to do this on Ubuntu.

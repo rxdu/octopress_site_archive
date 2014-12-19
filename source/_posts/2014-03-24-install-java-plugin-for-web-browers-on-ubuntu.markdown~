@@ -8,7 +8,7 @@ categories: [ubuntu]
 
 Java plugin is required to download certificates for WPI wireless. It's often required for other applications. Here is a summary of how to do this on Ubuntu.
 
-1.Install Java Runtime Environment
+1.Install Java Runtime Environment 64bit
 
 ```
 $ sudo add-apt-repository ppa:webupd8team/java
