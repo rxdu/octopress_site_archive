@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | Ruixiang Du]]></title>
   <link href="http://rxdu.me/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://rxdu.me/"/>
-  <updated>2014-11-15T19:49:17-05:00</updated>
+  <updated>2014-12-19T00:48:57-05:00</updated>
   <id>http://rxdu.me/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
@@ -56,6 +56,144 @@ sudo ln -s /&lt;right-path-of-libnpjp2-so&gt;/libnpjp2.so
 
 <p>Reference:
 <a href="http://m.wikihow.com/Enable-Oracle-Java-in-Your-Web-Browsers-on-Ubuntu-Linux">How to Enable Oracle Java in Your Web Browsers on Ubuntu Linux</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Remote Desktop of Ubuntu 12.04]]></title>
+    <link href="http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/"/>
+    <updated>2014-01-21T22:19:51-05:00</updated>
+    <id>http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04</id>
+    <content type="html"><![CDATA[<p>Install xRDP package:
+<code>
+$sudo apt-get install xrdp
+</code>
+If you have problem connecting to the desktop, run:
+<code>
+$echo "gnome-session --session=ubuntu-2d" &gt; ~/.xsession
+$sudo apt-get install gnome-session-fallback
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Disable Guest Account in Ubuntu]]></title>
+    <link href="http://rxdu.me/blog/2014/01/21/disable-guest-account-in-ubuntu/"/>
+    <updated>2014-01-21T22:16:55-05:00</updated>
+    <id>http://rxdu.me/blog/2014/01/21/disable-guest-account-in-ubuntu</id>
+    <content type="html"><![CDATA[<p>Sometimes you may feel annoying to accidentally login to the guest account on you personal computer. But unlike Mac OS, you cannot disable this account directly from &ldquo;System Settings&rdquo;.</p>
+
+<p>You can get it by following these steps:</p>
+
+<ol>
+<li><p>Open a terminal and enter command:
+<code>
+$ gksudo gedit /etc/lightdm/lightdm.conf
+</code></p></li>
+<li><p>Add one line at the end of the file:
+<code>
+$ allow-guest=false
+</code></p></li>
+<li><p>Now you should see something like this in the file:
+<code>
+[SeatDefaults]
+greeter-session=unity-greeter
+user-session=ubuntu
+allow-guest=false
+</code></p></li>
+<li><p>Save and exit the file. Restart lightdm:
+<code>
+$ sudo restart lightdm
+</code></p></li>
+</ol>
+
+
+<p>Reference: <a href="http://www.ubuntugeek.com/ubuntu-tiphow-to-disable-guest-account-in-ubuntu-12-04precise.html">http://www.ubuntugeek.com/ubuntu-tiphow-to-disable-guest-account-in-ubuntu-12-04precise.html</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Install Eclipse in Ubuntu]]></title>
+    <link href="http://rxdu.me/blog/2014/01/21/install-eclipse-in-ubuntu/"/>
+    <updated>2014-01-21T22:11:45-05:00</updated>
+    <id>http://rxdu.me/blog/2014/01/21/install-eclipse-in-ubuntu</id>
+    <content type="html"><![CDATA[<p>First make sure you have installed JAVA in ubuntu to run Eclipse.
+<code>
+$ sudo add-apt-repository ppa:webupd8team/java
+$ sudo apt-get update
+$ sudo apt-get install oracle-java7-installer
+</code></p>
+
+<ol>
+<li>Download the latest Eclipse from its official website.</li>
+<li>Extract the files from the archive.</li>
+<li><p>Move the extracted folder to whereever you want to put it.
+<code>
+$ sudo mv eclipse /opt/
+</code></p></li>
+<li><p>Create a symlink in /usr/local/bin using
+<code>
+$ cd /usr/local/bin
+$ sudo ln -s /opt/eclipse/eclipse
+</code></p></li>
+<li><p>Now you should be able to run eclipse from a terminal.</p></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Fix 'libgazebo_common.so.1 Not Found' Error on Ubuntu 12.04]]></title>
+    <link href="http://rxdu.me/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04/"/>
+    <updated>2014-01-21T21:36:56-05:00</updated>
+    <id>http://rxdu.me/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04</id>
+    <content type="html"><![CDATA[<p>Reference:<a href="http://webcache.googleusercontent.com/search?q=cache:BPYPhX2gWWsJ:answers.gazebosim.org/question/2338/on-ubuntu-1204-libgazebo_commonso1-not-found/+&amp;cd=2&amp;hl=en&amp;ct=clnk&amp;gl=us">Gazebo Answers</a></p>
+
+<p>With ROS Groovy installed on Ubuntu 12.04, I was trying to install Gazebo simulator. I followed instructions on this page: <a href="http://gazebosim.org/wiki/1.6/install#Compile_Instructions.">http://gazebosim.org/wiki/1.6/install#Compile_Instructions.</a> Following Compile Instructions, gazebo was installed in the default directory, but step 11 gave the error:
+<code>
+$ gazebo
+gazebo: error while loading shared libraries: libgazebo_common.so.1: cannot open shared object file: No such file or directory
+</code></p>
+
+<!-- more -->
+
+
+<p>From the Gazebo Answers website, I found the solution to this problem provided by <em>gerkey</em>. It seemed the original link for this ask-and-answer post was broken and only a cached paged by google could be visited. Since this post solved my problem, I copy it here for future reference:</p>
+
+<hr />
+
+<p>Answer:</p>
+
+<p>tl;dr:
+<code>
+sudo bash -c "echo /usr/local/lib &gt;&gt; /etc/ld.so.conf"
+sudo ldconfig
+</code>
+First, let&rsquo;s understand the situation:
+<code>
+ldd `which gazebo` | grep "not found"
+</code>
+That will give you a list of the libraries that the executable needs, but that the loader can&rsquo;t find. Probably libgazebo_common.so will be in that list, likely along with many other lib_gazebo* libraries.</p>
+
+<p>If you did a default install, it went into /usr/local. By default, your system loader might be configured not to look in /usr/local/lib. To test that, add that directory to your LD_LIBRARY_PATH:
+<code>
+LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH ldd `which gazebo` | grep "not found"
+</code>
+If that gives you an empty list, then you&rsquo;re ready to go, in which case you run gazebo like so:
+<code>
+LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH gazebo
+</code>
+or:
+<code>
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+gazebo
+</code>
+But it&rsquo;s better not to have to remember that. So you can configure your system to look in /usr/local/lib for libraries:
+<code>
+sudo bash -c "echo /usr/local/lib &gt;&gt; /etc/ld.so.conf"
+sudo ldconfig
+</code>
+That should work for gazebo and for anything else that you install to /usr/local.</p>
 ]]></content>
   </entry>
   

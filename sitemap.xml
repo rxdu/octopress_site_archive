@@ -58,46 +58,46 @@
     </url>
     <url>
         <loc>http://rxdu.me/blog/2014/03/24/install-java-plugin-for-web-browers-on-ubuntu/</loc>
-        <lastmod>2014-04-24T00:13:49-04:00</lastmod>
+        <lastmod>2014-12-19T00:44:49-05:00</lastmod>
     </url>
     <url>
         <loc>http://rxdu.me/blog/2014/03/25/using-qt-in-ros-catkin-packages/</loc>
         <lastmod>2014-04-24T00:13:49-04:00</lastmod>
     </url>
     <url>
+        <loc>http://rxdu.me/blog/archives/</loc>
+        <lastmod>2014-12-19T00:44:49-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://rxdu.me/blog/</loc>
+        <lastmod>2014-12-19T00:44:49-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://rxdu.me/about-me/</loc>
         <lastmod>2014-09-20T15:24:16-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/interests/</loc>
-        <lastmod>2014-01-22T23:20:36-05:00</lastmod>
+        <loc>http://rxdu.me/research/</loc>
+        <lastmod>2014-11-15T19:49:16-05:00</lastmod>
     </url>
     <url>
         <loc>http://rxdu.me/category-list/</loc>
         <lastmod>2014-01-23T01:38:14-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/</loc>
-        <lastmod>2014-09-20T15:29:28-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://rxdu.me/blog/archives/</loc>
-        <lastmod>2014-09-20T15:29:28-04:00</lastmod>
+        <loc>http://rxdu.me/</loc>
+        <lastmod>2014-09-20T15:25:20-04:00</lastmod>
     </url>
     <url>
         <loc>http://rxdu.me/robots.txt</loc>
         <lastmod>2014-01-19T14:25:32-05:00</lastmod>
     </url>
     <url>
+        <loc>http://rxdu.me/interests/</loc>
+        <lastmod>2014-01-22T23:20:36-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://rxdu.me/projects/</loc>
         <lastmod>2014-08-22T01:43:36-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://rxdu.me/</loc>
-        <lastmod>2014-09-20T15:25:20-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://rxdu.me/research/</loc>
-        <lastmod>2014-11-15T19:49:16-05:00</lastmod>
     </url>
 </urlset>
