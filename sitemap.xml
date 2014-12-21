@@ -1,111 +1,111 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://rxdu.me/blog/2014/01/19/first-blog/</loc>
+        <loc>http://rdu.im/blog/2014/01/19/first-blog/</loc>
         <lastmod>2014-01-23T01:19:44-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/2014/01/20/tips-for-the-use-of-octopress/</loc>
+        <loc>http://rdu.im/blog/2014/01/20/tips-for-the-use-of-octopress/</loc>
         <lastmod>2014-09-20T15:29:28-04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://rxdu.me/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file/
+            http://rdu.im/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file/
         </loc>
         <lastmod>2014-01-20T18:13:40-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/2014/01/20/basic-commands-of-ubuntu/</loc>
+        <loc>http://rdu.im/blog/2014/01/20/basic-commands-of-ubuntu/</loc>
         <lastmod>2014-01-22T23:38:14-05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://rxdu.me/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04/
+            http://rdu.im/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04/
         </loc>
         <lastmod>2014-01-22T23:39:56-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/2014/01/21/software-upgrade-for-turtlebot/</loc>
+        <loc>http://rdu.im/blog/2014/01/21/software-upgrade-for-turtlebot/</loc>
         <lastmod>2014-01-22T23:40:46-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/2014/01/21/install-eclipse-in-ubuntu/</loc>
+        <loc>http://rdu.im/blog/2014/01/21/install-eclipse-in-ubuntu/</loc>
         <lastmod>2014-01-22T23:40:10-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/2014/01/21/disable-guest-account-in-ubuntu/</loc>
+        <loc>http://rdu.im/blog/2014/01/21/disable-guest-account-in-ubuntu/</loc>
         <lastmod>2014-01-21T22:19:22-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/</loc>
+        <loc>http://rdu.im/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/</loc>
         <lastmod>2014-01-22T23:40:30-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/2014/01/21/use-stm32-peripheral-library-with-emide/</loc>
+        <loc>http://rdu.im/blog/2014/01/21/use-stm32-peripheral-library-with-emide/</loc>
         <lastmod>2014-01-29T20:37:38-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/2014/02/20/a-tutorial-of-cmake/</loc>
+        <loc>http://rdu.im/blog/2014/02/20/a-tutorial-of-cmake/</loc>
         <lastmod>2014-04-24T00:13:49-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/</loc>
+        <loc>http://rdu.im/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/</loc>
         <lastmod>2014-04-24T00:13:49-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/2014/03/02/setting-up-two-custom-domains-for-github-pages/</loc>
+        <loc>http://rdu.im/blog/2014/03/02/setting-up-two-custom-domains-for-github-pages/</loc>
         <lastmod>2014-04-24T00:13:49-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/2014/03/24/install-java-plugin-for-web-browers-on-ubuntu/</loc>
+        <loc>http://rdu.im/blog/2014/03/24/install-java-plugin-for-web-browers-on-ubuntu/</loc>
         <lastmod>2014-12-19T00:44:49-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/2014/03/25/using-qt-in-ros-catkin-packages/</loc>
+        <loc>http://rdu.im/blog/2014/03/25/using-qt-in-ros-catkin-packages/</loc>
         <lastmod>2014-04-24T00:13:49-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/archives/</loc>
+        <loc>http://rdu.im/blog/archives/</loc>
         <lastmod>2014-12-19T00:44:49-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/blog/</loc>
+        <loc>http://rdu.im/blog/</loc>
         <lastmod>2014-12-19T00:44:49-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/about-me/</loc>
+        <loc>http://rdu.im/about-me/</loc>
         <lastmod>2014-09-20T15:24:16-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/research/</loc>
+        <loc>http://rdu.im/research/</loc>
         <lastmod>2014-12-21T01:07:54-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/category-list/</loc>
+        <loc>http://rdu.im/category-list/</loc>
         <lastmod>2014-01-23T01:38:14-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/</loc>
+        <loc>http://rdu.im/</loc>
         <lastmod>2014-12-20T22:41:06-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/resume/</loc>
+        <loc>http://rdu.im/resume/</loc>
         <lastmod>2014-12-21T01:34:44-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/robots.txt</loc>
+        <loc>http://rdu.im/robots.txt</loc>
         <lastmod>2014-01-19T14:25:32-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/devel/</loc>
-        <lastmod>2014-12-21T01:36:06-05:00</lastmod>
+        <loc>http://rdu.im/devel/</loc>
+        <lastmod>2014-12-21T01:36:55-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/interests/</loc>
+        <loc>http://rdu.im/interests/</loc>
         <lastmod>2014-01-22T23:20:36-05:00</lastmod>
     </url>
     <url>
-        <loc>http://rxdu.me/projects/</loc>
+        <loc>http://rdu.im/projects/</loc>
         <lastmod>2014-12-20T23:55:45-05:00</lastmod>
     </url>
 </urlset>

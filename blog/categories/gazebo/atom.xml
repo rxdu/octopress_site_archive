@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Gazebo | Ruixiang Du]]></title>
-  <link href="http://rxdu.me/blog/categories/gazebo/atom.xml" rel="self"/>
-  <link href="http://rxdu.me/"/>
-  <updated>2014-12-21T01:36:10-05:00</updated>
-  <id>http://rxdu.me/</id>
+  <link href="http://rdu.im/blog/categories/gazebo/atom.xml" rel="self"/>
+  <link href="http://rdu.im/"/>
+  <updated>2014-12-21T01:39:19-05:00</updated>
+  <id>http://rdu.im/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How to Fix 'libgazebo_common.so.1 Not Found' Error on Ubuntu 12.04]]></title>
-    <link href="http://rxdu.me/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04/"/>
+    <link href="http://rdu.im/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04/"/>
     <updated>2014-01-21T21:36:56-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04</id>
+    <id>http://rdu.im/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04</id>
     <content type="html"><![CDATA[<p>Reference:<a href="http://webcache.googleusercontent.com/search?q=cache:BPYPhX2gWWsJ:answers.gazebosim.org/question/2338/on-ubuntu-1204-libgazebo_commonso1-not-found/+&amp;cd=2&amp;hl=en&amp;ct=clnk&amp;gl=us">Gazebo Answers</a></p>
 
 <p>With ROS Groovy installed on Ubuntu 12.04, I was trying to install Gazebo simulator. I followed instructions on this page: <a href="http://gazebosim.org/wiki/1.6/install#Compile_Instructions.">http://gazebosim.org/wiki/1.6/install#Compile_Instructions.</a> Following Compile Instructions, gazebo was installed in the default directory, but step 11 gave the error:

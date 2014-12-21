@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Ruixiang Du]]></title>
-  <link href="http://rxdu.me/atom.xml" rel="self"/>
-  <link href="http://rxdu.me/"/>
-  <updated>2014-12-21T01:36:10-05:00</updated>
-  <id>http://rxdu.me/</id>
+  <link href="http://rdu.im/atom.xml" rel="self"/>
+  <link href="http://rdu.im/"/>
+  <updated>2014-12-21T01:39:19-05:00</updated>
+  <id>http://rdu.im/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Using QT in ROS Catkin Packages]]></title>
-    <link href="http://rxdu.me/blog/2014/03/25/using-qt-in-ros-catkin-packages/"/>
+    <link href="http://rdu.im/blog/2014/03/25/using-qt-in-ros-catkin-packages/"/>
     <updated>2014-03-25T18:14:35-04:00</updated>
-    <id>http://rxdu.me/blog/2014/03/25/using-qt-in-ros-catkin-packages</id>
+    <id>http://rdu.im/blog/2014/03/25/using-qt-in-ros-catkin-packages</id>
     <content type="html"><![CDATA[<p>Rviz plugins are basically QT widgets. CMakeLists.txt of the ROS package using QT needs to be modified accordingly for the compilation. ROS wiki provides several tutorials/examples about how to write a plugin for Rviz and how to configure the package. However, these materials are mainly for rosbuild. This article introduces how to use QT in ROS catkin packages, in other words, how to use QT for a package of ROS Groovy/Hydro or later. This article shows how to write the CMakeLists.txt for a package, which uses librviz for visualization.</p>
 
 <!-- more -->
@@ -115,7 +115,7 @@
 
 <p>To understand why you should do this, you need to understand the QT build system. For detailed illustration, read this <a href="http://qt-project.org/quarterly/view/using_cmake_to_build_qt_projects">Document</a> from qt-project.org. <strong>The image shown below is also from this document</strong>. I include it here just for convinence of reference.</p>
 
-<p><img src="http://rxdu.me/images/posts/qt-build-system.png" width="600"></p>
+<p><img src="http://rdu.im/images/posts/qt-build-system.png" width="600"></p>
 
 <p>The basic idea of the above code snippet,</p>
 
@@ -144,9 +144,9 @@
   
   <entry>
     <title type="html"><![CDATA[Install Java Plugin for Web Browers on Ubuntu]]></title>
-    <link href="http://rxdu.me/blog/2014/03/24/install-java-plugin-for-web-browers-on-ubuntu/"/>
+    <link href="http://rdu.im/blog/2014/03/24/install-java-plugin-for-web-browers-on-ubuntu/"/>
     <updated>2014-03-24T22:39:20-04:00</updated>
-    <id>http://rxdu.me/blog/2014/03/24/install-java-plugin-for-web-browers-on-ubuntu</id>
+    <id>http://rdu.im/blog/2014/03/24/install-java-plugin-for-web-browers-on-ubuntu</id>
     <content type="html"><![CDATA[<p>Java plugin is required to download certificates for WPI wireless. It&rsquo;s often required for other applications. Here is a summary of how to do this on Ubuntu.</p>
 
 <p>1.Install Java Runtime Environment 64bit</p>
@@ -199,9 +199,9 @@
   
   <entry>
     <title type="html"><![CDATA[Setting Up Two Custom Domains for Github Pages]]></title>
-    <link href="http://rxdu.me/blog/2014/03/02/setting-up-two-custom-domains-for-github-pages/"/>
+    <link href="http://rdu.im/blog/2014/03/02/setting-up-two-custom-domains-for-github-pages/"/>
     <updated>2014-03-02T20:20:01-05:00</updated>
-    <id>http://rxdu.me/blog/2014/03/02/setting-up-two-custom-domains-for-github-pages</id>
+    <id>http://rdu.im/blog/2014/03/02/setting-up-two-custom-domains-for-github-pages</id>
     <content type="html"><![CDATA[<p>According to <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">offical tutorial</a>, &ldquo;You can only have one custom domain for any given set of Pages. If you want multiple domains to point to the same Pages, you will need to use a service that can redirect the other domains to your Pages domain.&rdquo;</p>
 
 <p>This post gives an example about how to do the redirection with two domain names from <a href="https://www.namecheap.com/">namecheap</a> and <a href="https://www.name.com/">name.com</a> respectively.</p>
@@ -222,7 +222,7 @@ From the &ldquo;Host Management&rdquo; section on the left side, go to &ldquo;Al
 
 <p>HOST NAME: @; IP ADDRESS/URL:<a href="http://rxdu.github.io;">http://rxdu.github.io;</a> RECORD TYPE:redirect; TTL:1800</p>
 
-<p><img src="http://rxdu.me/images/posts/namecheap_config.png" width="850"></p>
+<p><img src="http://rdu.im/images/posts/namecheap_config.png" width="850"></p>
 
 <ol>
 <li>On name.com:
@@ -234,7 +234,7 @@ Go to DNS Record and add two records:</li>
 
 <p>Type:A; Host:rdu.im; Answer:192.30.252.154; TTL:1800</p>
 
-<p><img src="http://rxdu.me/images/posts/namecom_config.png" width="850"></p>
+<p><img src="http://rdu.im/images/posts/namecom_config.png" width="850"></p>
 
 <p>After finishing the above 3 three steps, you should be all set. Wait for some time and check if both of the domains work properly.</p>
 ]]></content>
@@ -242,9 +242,9 @@ Go to DNS Record and add two records:</li>
   
   <entry>
     <title type="html"><![CDATA[How to Use Eclipse for CMAKE Projects]]></title>
-    <link href="http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/"/>
+    <link href="http://rdu.im/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/"/>
     <updated>2014-02-23T22:50:31-05:00</updated>
-    <id>http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects</id>
+    <id>http://rdu.im/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects</id>
     <content type="html"><![CDATA[<p>Reference:</p>
 
 <p><a href="http://www.vtk.org/Wiki/CMake%3aEclipse_UNIX_Tutorial">http://www.vtk.org/Wiki/CMake%3aEclipse_UNIX_Tutorial</a>
@@ -254,9 +254,9 @@ Go to DNS Record and add two records:</li>
   
   <entry>
     <title type="html"><![CDATA[A Tutorial of CMAKE]]></title>
-    <link href="http://rxdu.me/blog/2014/02/20/a-tutorial-of-cmake/"/>
+    <link href="http://rdu.im/blog/2014/02/20/a-tutorial-of-cmake/"/>
     <updated>2014-02-20T13:37:41-05:00</updated>
-    <id>http://rxdu.me/blog/2014/02/20/a-tutorial-of-cmake</id>
+    <id>http://rdu.im/blog/2014/02/20/a-tutorial-of-cmake</id>
     <content type="html"><![CDATA[<p>CMAKE is widely used in many open-source projects. It&rsquo;s also necessary to lean about it for your own projects.</p>
 
 <p><a href="http://mirkokiefer.com/blog/2013/03/cmake-by-example/">CMake by Example</a> is a good tutorial to get started. Just a record for future reference.</p>
@@ -265,9 +265,9 @@ Go to DNS Record and add two records:</li>
   
   <entry>
     <title type="html"><![CDATA[Use STM32 Peripheral Library With emIDE]]></title>
-    <link href="http://rxdu.me/blog/2014/01/21/use-stm32-peripheral-library-with-emide/"/>
+    <link href="http://rdu.im/blog/2014/01/21/use-stm32-peripheral-library-with-emide/"/>
     <updated>2014-01-21T22:22:27-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/21/use-stm32-peripheral-library-with-emide</id>
+    <id>http://rdu.im/blog/2014/01/21/use-stm32-peripheral-library-with-emide</id>
     <content type="html"><![CDATA[<p>emIDE is a open source IDE for embedded development. It integrates GCC toolchain and provides JLink support for debugging. Compared with other free, open source alternatives, it&rsquo;s much easier to start with. This blog introduces how to configure emIDE to write programs for STM32 MCU with standard peripheral library. The MCU used in this example is <em>STM32F103T8</em>. The library used is <em>STM32F10x_StdPeriph_Lib_V3.5.0</em> from ST. And the debugger probe is JLink EDU.</p>
 
 <!-- more -->
@@ -280,28 +280,28 @@ Go to DNS Record and add two records:</li>
 </ol>
 
 
-<p><img src="http://rxdu.me/images/posts/emide_1.png" width="400"></p>
+<p><img src="http://rdu.im/images/posts/emide_1.png" width="400"></p>
 
 <ol>
 <li>In &ldquo;Build Options&rdquo; of the project, under Compiler <em>settings/#defines tab</em>, add two macros: STM32F10X_MD, USE_STDPERIPH_DRIVER. The first one specifies the MCU family you are using and the second one tells the compiler you will use standard library in the project.</li>
 </ol>
 
 
-<p><img src="http://rxdu.me/images/posts/emide_2.png" width="600"></p>
+<p><img src="http://rdu.im/images/posts/emide_2.png" width="600"></p>
 
 <ol>
 <li>Add Search directories so that the compiler can find all header files of the library.</li>
 </ol>
 
 
-<p><img src="http://rxdu.me/images/posts/emide_3.png" width="600"></p>
+<p><img src="http://rdu.im/images/posts/emide_3.png" width="600"></p>
 
 <ol>
 <li>In Properties of the project, make sure your JLink works under the right mode.</li>
 </ol>
 
 
-<p><img src="http://rxdu.me/images/posts/emide_4.png" width="600"></p>
+<p><img src="http://rdu.im/images/posts/emide_4.png" width="600"></p>
 
 <p>Now you should be able to build the project and download the code into your target board.</p>
 ]]></content>
@@ -309,9 +309,9 @@ Go to DNS Record and add two records:</li>
   
   <entry>
     <title type="html"><![CDATA[Remote Desktop of Ubuntu 12.04]]></title>
-    <link href="http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/"/>
+    <link href="http://rdu.im/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04/"/>
     <updated>2014-01-21T22:19:51-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04</id>
+    <id>http://rdu.im/blog/2014/01/21/remote-desktop-of-ubuntu-12-dot-04</id>
     <content type="html"><![CDATA[<p>Install xRDP package:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -330,9 +330,9 @@ Go to DNS Record and add two records:</li>
   
   <entry>
     <title type="html"><![CDATA[Disable Guest Account in Ubuntu]]></title>
-    <link href="http://rxdu.me/blog/2014/01/21/disable-guest-account-in-ubuntu/"/>
+    <link href="http://rdu.im/blog/2014/01/21/disable-guest-account-in-ubuntu/"/>
     <updated>2014-01-21T22:16:55-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/21/disable-guest-account-in-ubuntu</id>
+    <id>http://rdu.im/blog/2014/01/21/disable-guest-account-in-ubuntu</id>
     <content type="html"><![CDATA[<p>Sometimes you may feel annoying to accidentally login to the guest account on you personal computer. But unlike Mac OS, you cannot disable this account directly from &ldquo;System Settings&rdquo;.</p>
 
 <p>You can get it by following these steps:</p>
@@ -385,9 +385,9 @@ Go to DNS Record and add two records:</li>
   
   <entry>
     <title type="html"><![CDATA[Install Eclipse in Ubuntu]]></title>
-    <link href="http://rxdu.me/blog/2014/01/21/install-eclipse-in-ubuntu/"/>
+    <link href="http://rdu.im/blog/2014/01/21/install-eclipse-in-ubuntu/"/>
     <updated>2014-01-21T22:11:45-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/21/install-eclipse-in-ubuntu</id>
+    <id>http://rdu.im/blog/2014/01/21/install-eclipse-in-ubuntu</id>
     <content type="html"><![CDATA[<p>First make sure you have installed JAVA in ubuntu to run Eclipse.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -429,9 +429,9 @@ Go to DNS Record and add two records:</li>
   
   <entry>
     <title type="html"><![CDATA[Software Upgrade for Turtlebot]]></title>
-    <link href="http://rxdu.me/blog/2014/01/21/software-upgrade-for-turtlebot/"/>
+    <link href="http://rdu.im/blog/2014/01/21/software-upgrade-for-turtlebot/"/>
     <updated>2014-01-21T21:52:23-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/21/software-upgrade-for-turtlebot</id>
+    <id>http://rdu.im/blog/2014/01/21/software-upgrade-for-turtlebot</id>
     <content type="html"><![CDATA[<p>This article briefly illustrates how to upgrade the software of turtlebot to Ubuntu 12.04 &amp; ROS Groovy from earlier versions. Several issues that may occur during the upgrade are stated as the supplement of official tutorials from ROS wiki.</p>
 
 <!-- more -->
@@ -495,9 +495,9 @@ Go to DNS Record and add two records:</li>
   
   <entry>
     <title type="html"><![CDATA[How to Fix 'libgazebo_common.so.1 Not Found' Error on Ubuntu 12.04]]></title>
-    <link href="http://rxdu.me/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04/"/>
+    <link href="http://rdu.im/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04/"/>
     <updated>2014-01-21T21:36:56-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04</id>
+    <id>http://rdu.im/blog/2014/01/21/how-to-fix-libgazebo-common-dot-so-dot-1-not-found-error-on-ubuntu-12-dot-04</id>
     <content type="html"><![CDATA[<p>Reference:<a href="http://webcache.googleusercontent.com/search?q=cache:BPYPhX2gWWsJ:answers.gazebosim.org/question/2338/on-ubuntu-1204-libgazebo_commonso1-not-found/+&amp;cd=2&amp;hl=en&amp;ct=clnk&amp;gl=us">Gazebo Answers</a></p>
 
 <p>With ROS Groovy installed on Ubuntu 12.04, I was trying to install Gazebo simulator. I followed instructions on this page: <a href="http://gazebosim.org/wiki/1.6/install#Compile_Instructions.">http://gazebosim.org/wiki/1.6/install#Compile_Instructions.</a> Following Compile Instructions, gazebo was installed in the default directory, but step 11 gave the error:</p>
@@ -567,9 +567,9 @@ Go to DNS Record and add two records:</li>
   
   <entry>
     <title type="html"><![CDATA[Basic Commands of Ubuntu]]></title>
-    <link href="http://rxdu.me/blog/2014/01/20/basic-commands-of-ubuntu/"/>
+    <link href="http://rdu.im/blog/2014/01/20/basic-commands-of-ubuntu/"/>
     <updated>2014-01-20T18:15:40-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/20/basic-commands-of-ubuntu</id>
+    <id>http://rdu.im/blog/2014/01/20/basic-commands-of-ubuntu</id>
     <content type="html"><![CDATA[<ol>
 <li><p>Switch between GUI and virtual console:</p>
 
@@ -675,9 +675,9 @@ grep -I wireless myfile.txt
   
   <entry>
     <title type="html"><![CDATA[Use of IEEE Conference LaTex Template With .bib File]]></title>
-    <link href="http://rxdu.me/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file/"/>
+    <link href="http://rdu.im/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file/"/>
     <updated>2014-01-20T18:05:23-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file</id>
+    <id>http://rdu.im/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file</id>
     <content type="html"><![CDATA[<p>Recently I need to use the IEEE LaTex template (from <a href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html">http://www.ieee.org/conferences_events/conferences/publishing/templates.html</a>) for a conference paper. This template doesn&rsquo;t use a .bib file for the management of references unless you make some modifictions. In my first try to use it, I got this error during compiling:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -756,9 +756,9 @@ I googled this issue and tried different solutions. Finally I figured it out how
   
   <entry>
     <title type="html"><![CDATA[Tips for the Use of Octopress]]></title>
-    <link href="http://rxdu.me/blog/2014/01/20/tips-for-the-use-of-octopress/"/>
+    <link href="http://rdu.im/blog/2014/01/20/tips-for-the-use-of-octopress/"/>
     <updated>2014-01-20T15:36:18-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/20/tips-for-the-use-of-octopress</id>
+    <id>http://rdu.im/blog/2014/01/20/tips-for-the-use-of-octopress</id>
     <content type="html"><![CDATA[<p>In the past two days, I transferred my blog from several other places to Github Pages with Octopress. Since I&rsquo;m a stranger to web development, I felt rather lost at the very beginning. But after you finish it, you will find it&rsquo;s not that difficult, at least not so hard to get a less customized Octopress-based blog. There are many good tutorials on the Internet so I see no point to write a new one. In this post, I mainly gather some resources I feel useful to finish the work.</p>
 
 <h2>Setup</h2>
@@ -876,9 +876,9 @@ I googled this issue and tried different solutions. Finally I figured it out how
   
   <entry>
     <title type="html"><![CDATA[First Blog]]></title>
-    <link href="http://rxdu.me/blog/2014/01/19/first-blog/"/>
+    <link href="http://rdu.im/blog/2014/01/19/first-blog/"/>
     <updated>2014-01-19T14:48:01-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/19/first-blog</id>
+    <id>http://rdu.im/blog/2014/01/19/first-blog</id>
     <content type="html"><![CDATA[<p>This is the first blog for testing purpose.</p>
 ]]></content>
   </entry>

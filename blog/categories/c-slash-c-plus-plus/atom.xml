@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: C/C++ | Ruixiang Du]]></title>
-  <link href="http://rxdu.me/blog/categories/c-slash-c-plus-plus/atom.xml" rel="self"/>
-  <link href="http://rxdu.me/"/>
-  <updated>2014-12-21T01:36:10-05:00</updated>
-  <id>http://rxdu.me/</id>
+  <link href="http://rdu.im/blog/categories/c-slash-c-plus-plus/atom.xml" rel="self"/>
+  <link href="http://rdu.im/"/>
+  <updated>2014-12-21T01:39:19-05:00</updated>
+  <id>http://rdu.im/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How to Use Eclipse for CMAKE Projects]]></title>
-    <link href="http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/"/>
+    <link href="http://rdu.im/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects/"/>
     <updated>2014-02-23T22:50:31-05:00</updated>
-    <id>http://rxdu.me/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects</id>
+    <id>http://rdu.im/blog/2014/02/23/how-to-use-eclipse-for-cmake-projects</id>
     <content type="html"><![CDATA[<p>Reference:</p>
 
 <p><a href="http://www.vtk.org/Wiki/CMake%3aEclipse_UNIX_Tutorial">http://www.vtk.org/Wiki/CMake%3aEclipse_UNIX_Tutorial</a>
