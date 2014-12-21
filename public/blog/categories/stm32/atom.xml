@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: STM32 | Ruixiang Du]]></title>
-  <link href="http://rxdu.me/blog/categories/stm32/atom.xml" rel="self"/>
-  <link href="http://rxdu.me/"/>
-  <updated>2014-12-19T00:48:57-05:00</updated>
-  <id>http://rxdu.me/</id>
+  <link href="http://rdu.im/blog/categories/stm32/atom.xml" rel="self"/>
+  <link href="http://rdu.im/"/>
+  <updated>2014-12-21T01:40:17-05:00</updated>
+  <id>http://rdu.im/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Use STM32 Peripheral Library With emIDE]]></title>
-    <link href="http://rxdu.me/blog/2014/01/21/use-stm32-peripheral-library-with-emide/"/>
+    <link href="http://rdu.im/blog/2014/01/21/use-stm32-peripheral-library-with-emide/"/>
     <updated>2014-01-21T22:22:27-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/21/use-stm32-peripheral-library-with-emide</id>
+    <id>http://rdu.im/blog/2014/01/21/use-stm32-peripheral-library-with-emide</id>
     <content type="html"><![CDATA[<p>emIDE is a open source IDE for embedded development. It integrates GCC toolchain and provides JLink support for debugging. Compared with other free, open source alternatives, it&rsquo;s much easier to start with. This blog introduces how to configure emIDE to write programs for STM32 MCU with standard peripheral library. The MCU used in this example is <em>STM32F103T8</em>. The library used is <em>STM32F10x_StdPeriph_Lib_V3.5.0</em> from ST. And the debugger probe is JLink EDU.</p>
 
 <!-- more -->

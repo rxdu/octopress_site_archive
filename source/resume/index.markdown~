@@ -6,23 +6,19 @@ footer: true
 ---
 
 <a name="TOP"></a>
+[EDUCATION](#EDUCATION)  |  [TECHNICAL SKILLS](#SKILLS)  |  [RESEARCH&TEACHING](#RATA)  
+[PROJECTS](#PROJECTS)  |  [HONORS](#HONORS)  |  [ACTIVITIES](#ACTIVITIES)
 
-[EDUCATION](#EDUCATION) | [TECHNICAL SKILLS](#SKILLS) | [RESEARCH&TEACHING](#RATA)  
-[PROJECTS](#PROJECTS) | [HONORS](#HONORS) | [ACTIVITIES](#ACTIVITIES)
-
-<a href="{{ root_url }}/resume.pdf">See the PDF version</a> 
+<a href="{{ root_url }}/resume/resume.pdf">See the PDF version</a> 
 
 <a name="EDUCATION"></a>
 ## EDUCATION
 
-**Worcester Polytechnic Institute (WPI), Worcester, MA USA**
-
-* Doctor of Philosophy in Robotics Engineering, GPA: 3.89 - 08/2013 to Present
-* Master of Science in Robotics Engineering, GPA: 3.83/4 - 06/2013
-
-**North China Electric Power University (NCEPU), China**
-
-* Bachelor of Engineering in Automation, GPA: 87.9/100 - 07/2011
+* **Worcester Polytechnic Institute (WPI), Worcester, MA USA**
+	- Doctor of Philosophy in Robotics Engineering, GPA: 3.89 - 08/2013 to Present
+	- Master of Science in Robotics Engineering, GPA: 3.83/4 - 06/2013
+* **North China Electric Power University (NCEPU), China**
+	- Bachelor of Engineering in Automation, GPA: 87.9/100 - 07/2011
 
 <a name="SKILLS"></a>
 ## TECHNICAL SKILLS
@@ -35,16 +31,14 @@ I'm familiar with development in both Windows and Linux. A lot of my project dev
 
 <a name="RATA"></a>
 ## RESEARCH & TEACHING EXPERIENCE
-**Research Assistant, Worcester Polytechnic Institute**
 
-* [RIVeR Lab](http://robot.wpi.edu/), Professor Taskin Padir , 10/2014-Present
-
-**Teaching Assistant, Worcester Polytechnic Institute**
-
-* ECE2010, Introduction to ECE, Professor William Michalson, 2014 Fall A term
-* ECE549/RBE502, Robot Control, Professor Taskin Padir, 2014 Spring
-* ECE3503, Power Electronics, Professor Alexander E. Emanuel, 2013 Fall B term
-* ECE2010, Introduction to ECE, Professor James P. O’Rourke, 2013 Fall A term
+* **Research Assistant**
+	- [RIVeR Lab](http://robot.wpi.edu/), Professor Taskin Padir , 10/2014-Present
+* **Teaching Assistant** 
+	- ECE2010, Introduction to ECE, Professor William Michalson, 2014 Fall A term
+	- ECE549/RBE502, Robot Control, Professor Taskin Padir, 2014 Spring
+	- ECE3503, Power Electronics, Professor Alexander E. Emanuel, 2013 Fall B term
+	- ECE2010, Introduction to ECE, Professor James P. O’Rourke, 2013 Fall A term
 
 #<div style="text-align:right;line-height:3px;"><font size="3">[Back To Top](#TOP)</font></div>
 
@@ -85,6 +79,8 @@ well as keep balance
 {% img /images/projects/basic_model_02.jpg 367 %}
 {% img /images/projects/Picture1.jpg 365 %}
 
+#<div style="text-align:right;line-height:3px;"><font size="3">[Back To Top](#TOP)</font></div>
+
 #### Autonomous Flight Control of a Quadrotor, WPI 02/2012-12/2012
 
 - Studied the kinematics and dynamics model of the aircraft
@@ -121,8 +117,6 @@ well as keep balance
 
 {% img /images/projects/01_car_model_01.jpg 225 %}
 {% img /images/projects/labview_car.png 525 %}  
-
-#<div style="text-align:right;line-height:3px;"><font size="3">[Back To Top](#TOP)</font></div>
 
 <a name="HONORS"></a>
 ## HONORS

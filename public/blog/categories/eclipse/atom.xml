@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Eclipse | Ruixiang Du]]></title>
-  <link href="http://rxdu.me/blog/categories/eclipse/atom.xml" rel="self"/>
-  <link href="http://rxdu.me/"/>
-  <updated>2014-12-19T00:48:57-05:00</updated>
-  <id>http://rxdu.me/</id>
+  <link href="http://rdu.im/blog/categories/eclipse/atom.xml" rel="self"/>
+  <link href="http://rdu.im/"/>
+  <updated>2014-12-21T01:40:17-05:00</updated>
+  <id>http://rdu.im/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Install Eclipse in Ubuntu]]></title>
-    <link href="http://rxdu.me/blog/2014/01/21/install-eclipse-in-ubuntu/"/>
+    <link href="http://rdu.im/blog/2014/01/21/install-eclipse-in-ubuntu/"/>
     <updated>2014-01-21T22:11:45-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/21/install-eclipse-in-ubuntu</id>
+    <id>http://rdu.im/blog/2014/01/21/install-eclipse-in-ubuntu</id>
     <content type="html"><![CDATA[<p>First make sure you have installed JAVA in ubuntu to run Eclipse.
 <code>
 $ sudo add-apt-repository ppa:webupd8team/java

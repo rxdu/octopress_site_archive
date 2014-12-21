@@ -7,7 +7,8 @@ footer: false
 ---
 
 ###Research
-To be added...
+
+At present, most robots especially those designed to work around people can only run very slowly. An important reason for this is that we want to always keep safe and try to avoid collision between a robot and its environment. My research interest is to make a mobile robot more reactive to obstacles and make safe movements while not losing agileness in a cluttered environment with possible dynamic objects. 
 
 ###Publications
 

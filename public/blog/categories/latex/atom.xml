@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: LaTex | Ruixiang Du]]></title>
-  <link href="http://rxdu.me/blog/categories/latex/atom.xml" rel="self"/>
-  <link href="http://rxdu.me/"/>
-  <updated>2014-12-19T00:48:57-05:00</updated>
-  <id>http://rxdu.me/</id>
+  <link href="http://rdu.im/blog/categories/latex/atom.xml" rel="self"/>
+  <link href="http://rdu.im/"/>
+  <updated>2014-12-21T01:40:17-05:00</updated>
+  <id>http://rdu.im/</id>
   <author>
     <name><![CDATA[Ruixiang Du]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Use of IEEE Conference LaTex Template With .bib File]]></title>
-    <link href="http://rxdu.me/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file/"/>
+    <link href="http://rdu.im/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file/"/>
     <updated>2014-01-20T18:05:23-05:00</updated>
-    <id>http://rxdu.me/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file</id>
+    <id>http://rdu.im/blog/2014/01/20/use-of-ieee-conference-latex-template-with-bib-file</id>
     <content type="html"><![CDATA[<p>Recently I need to use the IEEE LaTex template (from <a href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html">http://www.ieee.org/conferences_events/conferences/publishing/templates.html</a>) for a conference paper. This template doesn&rsquo;t use a .bib file for the management of references unless you make some modifictions. In my first try to use it, I got this error during compiling:
 <code>
 Something's wrong--perhaps a missing \item. \end{thebibliography}
