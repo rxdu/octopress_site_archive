@@ -27,7 +27,7 @@ Quadcopters have been very popular in recently a few years. Hobbyists use quadco
     - Communications
 
 ### 2. IMU Module 
-An IMU module is used to estimate the attitude of the quadcopter. Instead of using a commercial flight control board which integrates both a microcontroller and accelerometer/gyro sensors, I'm using a separate module for development and testing. The testing hardware used:
+An IMU module is used to estimate the attitude of the quadcopter. Instead of using a commercial flight control board which integrates both a microcontroller and accelerometer/gyro sensors, I'm using separate modules for development and testing. The testing hardware used:
 
 * STM32F4 discovery board
 * MPU9250 sensor breakout board
