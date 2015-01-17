@@ -91,7 +91,45 @@
 
 <h2>Building a Quadcopter</h2>
 
-<p>Quadcopters have been very popular in recently a few years. Hobbyists use quadcopters to do various of interesting things such as aerial filming and FPV flight. Research organizations use them a lot as mobile platforms to do research in control, navigation, mapping etc. A quadcopter has a relative simple mechanical structure and doesn&rsquo;t require expensive sensors, processors and other electronic parts. But stabilization of it involves sensor fusion, automatic control and a lot of other theoretical knowledge. Thus building a quadcopter can be a ideal project for people who have learned some theories in dynamic control and want to put them into practice. One can experience how to build a flying robot from scratch and gain both theoretical and practical experience as well as tons of fun.</p>
+<p>Quadcopters have been very popular in recently a few years. Hobbyists use quadcopters to do various of interesting things such as aerial filming and FPV flight. Research organizations use them a lot as mobile platforms to do research in control, navigation, mapping etc. A quadcopter has a relative simple mechanical structure and doesn&rsquo;t require expensive sensors, processors and other electronic parts. But stabilization of it involves sensor fusion, automatic control and a lot of other theoretical knowledge. Thus building a quadcopter can be an ideal project for people who have learned some theories in dynamic control and want to put them into practice. You can gain both theoretical and practical experience as well as tons of fun by building a flying robot from scratch.</p>
+
+<h3>1. System Components</h3>
+
+<ul>
+<li>Hardware
+
+<ul>
+<li>Inertial measurement unit (IMU)</li>
+<li>Flight microcontroller</li>
+<li>A mechanical frame * 1</li>
+<li>DC brushless motors * 4</li>
+<li>DSC for brushless motors * 4</li>
+</ul>
+</li>
+<li>Software
+
+<ul>
+<li>Attitude estimation</li>
+<li>Attitude control</li>
+<li>Position control</li>
+<li>Communications</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>2. IMU Module</h3>
+
+<p>An IMU module is used to estimate the attitude of the quadcopter. Instead of using a commercial flight control board which integrates both a microcontroller and accelerometer/gyro sensors, I&rsquo;m using a separate module for development and testing. The testing hardware used:</p>
+
+<ul>
+<li>STM32F4 discovery board</li>
+<li>MPU9250 sensor breakout board</li>
+<li>Serial to USB adapter</li>
+</ul>
+
+
+<p><img src="/images/quadcopter/imu.jpg" width="367"></p>
 
 <h1><div style="text-align:right;line-height:3px;"><font size="3"><a href="#TOP">Back To Top</a></font></div></h1>
 
@@ -145,7 +183,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Ruixiang Du -
+  Copyright &copy; 2015 - Ruixiang Du -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
