@@ -8,9 +8,13 @@ footer: false
 
 ###Research
 
-At present, most robots especially those designed to work around people can only run very slowly. An important reason for this is that we want to always keep safe and try to avoid collision between a robot and its environment. My research interest is to make a mobile robot more reactive to a cluttered environment with possible dynamic objects. 
+At present, most robots which are designed to work around people usually run very slowly. An important reason for this is that we want to always keep safe and try to avoid collision between a robot and its environment. My research interest is to make a mobile robot more reactive to obstacles and make safe movements while not losing agileness in a cluttered environment with possible dynamic objects. 
 
 ###Publications
+
+**Journal**
+
+1. DeDonato, M., Dimitrov, V., Du, R., Giovacchini, R., Knoedler, K., Long, X., Polido, F., Gennert, M., Padir, T., Feng, S., Moriguchi, H., Whitman, E., Xinjilefu, X., Atkeson, C., “Human-in-the-Loop Control of a Humanoid Robot for Disaster Response: A Report from the DARPA Robotics Challenge Trials,” Journal of Field Robotics [to appear 2015].
 
 **Conference:** 
 

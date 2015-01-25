@@ -8,9 +8,13 @@ footer: false
 
 ###Research
 
-At present, most robots especially those designed to work around people can only run very slowly. An important reason for this is that we want to always keep safe and try to avoid collision between a robot and its environment. My research interest is to make a mobile robot more reactive to obstacles and make safe movements while not losing agileness in a cluttered environment with possible dynamic objects. 
+At present, most robots which are designed to work around people usually run very slowly. An important reason for this is that we want to always keep safe and try to avoid collision between a robot and its environment. My research interest is to make a mobile robot more reactive to obstacles and make safe movements while not losing agileness in a cluttered environment with possible dynamic objects. 
 
 ###Publications
+
+**Journal**
+
+1. DeDonato, M., Dimitrov, V., Du, R., Giovacchini, R., Knoedler, K., Long, X., Polido, F., Gennert, M., Padir, T., Feng, S., Moriguchi, H., Whitman, E., Xinjilefu, X., Atkeson, C., “Human-in-the-Loop Control of a Humanoid Robot for Disaster Response: A Report from the DARPA Robotics Challenge Trials,” Journal of Field Robotics [to appear 2015].
 
 **Conference:** 
 
@@ -28,7 +32,7 @@ At present, most robots especially those designed to work around people can only
 
 * ~~[IEEE ICRA 2015, Seattle, USA, 05/26-05/30, 2015](http://icra2015.org/) -- deadline: 10/01/2014~~ 
 
-* [2015 Robotics: Science and Systems, Rome, Italy, 07/13-07/17, 2015](http://www.roboticsconference.org/) -- deadline: 01/22/2015
+* ~~[2015 Robotics: Science and Systems, Rome, Italy, 07/13-07/17, 2015](http://www.roboticsconference.org/) -- deadline: 01/22/2015~~
 
 * [IEEE ICAR 2015, Istanbul, Turkey, 07/27-07/31, 2015](http://www.icar2015.org/icar2015_home-1.1.1.html) -- deadline: 02/01/2015
 
