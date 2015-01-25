@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Web_Development | Ruixiang Du]]></title>
+  <link href="http://rdu.im/blog/categories/web-development/atom.xml" rel="self"/>
+  <link href="http://rdu.im/"/>
+  <updated>2015-01-24T19:34:40-05:00</updated>
+  <id>http://rdu.im/</id>
+  <author>
+    <name><![CDATA[Ruixiang Du]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Setting Up Two Custom Domains for Github Pages]]></title>
+    <link href="http://rdu.im/blog/2014/03/02/setting-up-two-custom-domains-for-github-pages/"/>
+    <updated>2014-03-02T20:20:01-05:00</updated>
+    <id>http://rdu.im/blog/2014/03/02/setting-up-two-custom-domains-for-github-pages</id>
+    <content type="html"><![CDATA[<p>According to <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">offical tutorial</a>, &ldquo;You can only have one custom domain for any given set of Pages. If you want multiple domains to point to the same Pages, you will need to use a service that can redirect the other domains to your Pages domain.&rdquo;</p>
+
+<p>This post gives an example about how to do the redirection with two domain names from <a href="https://www.namecheap.com/">namecheap</a> and <a href="https://www.name.com/">name.com</a> respectively.</p>
+
+<!-- more -->
+
+
+<p>My personal feeling is that namecheap provides better user experience in managing your domains. You can get what you want very easily and their <a href="https://www.namecheap.com/support/knowledgebase/article/settingup_hostrecords">help page</a> is indeed very helpful and can save you some time searching on the Internet. Name.com also has a nice-looking management interface, but it seems they don&rsquo;t provide as many functionalities as namecheap does. I can get the redirection working without any pain but I failed to do the same thing on name.com. (I&rsquo;m not a person who is familiar with web development nor network. If you are one, maybe you could ignore this comment.)</p>
+
+<p>In this example, I use domainA(&ldquo;rdu.im&rdquo; from name.com) as the main method to access my github pages and use domainB(&ldquo;rxdu.me&rdquo; from namecheap) to do the redirection.</p>
+
+<ol>
+<li><p>Add a CNAME file, which includes your primary domain name, to your github page repository</p></li>
+<li><p>On namecheap:
+From the &ldquo;Host Management&rdquo; section on the left side, go to &ldquo;All Host Records&rdquo;. Add just one record:</p></li>
+</ol>
+
+
+<p>HOST NAME: @; IP ADDRESS/URL:<a href="http://rxdu.github.io;">http://rxdu.github.io;</a> RECORD TYPE:redirect; TTL:1800</p>
+
+<p><img src="/images/posts/namecheap_config.png" width="850"></p>
+
+<ol>
+<li>On name.com:
+Go to DNS Record and add two records:</li>
+</ol>
+
+
+<p>Type:A; Host:rdu.im; Answer:192.30.252.153; TTL:1800</p>
+
+<p>Type:A; Host:rdu.im; Answer:192.30.252.154; TTL:1800</p>
+
+<p><img src="/images/posts/namecom_config.png" width="850"></p>
+
+<p>After finishing the above 3 three steps, you should be all set. Wait for some time and check if both of the domains work properly.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tips for the Use of Octopress]]></title>
+    <link href="http://rdu.im/blog/2014/01/20/tips-for-the-use-of-octopress/"/>
+    <updated>2014-01-20T15:36:18-05:00</updated>
+    <id>http://rdu.im/blog/2014/01/20/tips-for-the-use-of-octopress</id>
+    <content type="html"><![CDATA[<p>In the past two days, I transferred my blog from several other places to Github Pages with Octopress. Since I&rsquo;m a stranger to web development, I felt rather lost at the very beginning. But after you finish it, you will find it&rsquo;s not that difficult, at least not so hard to get a less customized Octopress-based blog. There are many good tutorials on the Internet so I see no point to write a new one. In this post, I mainly gather some resources I feel useful to finish the work.</p>
+
+<h2>Setup</h2>
+
+<h4>Follow <a href="http://octopress.org/docs/setup/">official tutorial</a> to finish installation</h4>
+
+<ul>
+<li>Install GIt</li>
+<li>Install Ruby</li>
+<li>Clone Octopress repository from Github</li>
+<li>Install Dependencies</li>
+</ul>
+
+
+<p> <!-- more --></p>
+
+<h4>Deploy blog to Github</h4>
+
+<ul>
+<li>Set up github pages: <a href="http://pages.github.com/">http://pages.github.com/</a></li>
+<li>Deploy to github repository: <a href="http://octopress.org/docs/deploying/github/">http://octopress.org/docs/deploying/github/</a></li>
+</ul>
+
+
+<h4>Set up a personal domain</h4>
+
+<ul>
+<li>Register a domain from a domain registrar (for example: <a href="https://www.namecheap.com/">namecheap</a>)</li>
+<li><a href="http://davidensinger.com/2013/03/setting-the-dns-for-github-pages-on-namecheap/">Setting the DNS for Github Pages on Namecheap</a></li>
+</ul>
+
+
+<h4>Set up Octopress on multiple computers</h4>
+
+<ul>
+<li><a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">Clone your Octopress to Blog from Two Places</a></li>
+<li><a href="http://yhagio.github.io/blog/2013/04/09/how-to-start-octopress-blog-from-multiple-computers/">How to Start Octopress Blog From Multiple Computers</a></li>
+<li><em>Always Remember To Pull From Remote Before Your Start Workong On One Computer To Avoid Push Conflicts</em></li>
+</ul>
+
+
+<h2>Customization</h2>
+
+<ul>
+<li>Official documents are good materials to start: <a href="http://octopress.org/docs/theme/template/">template</a>, <a href="http://octopress.org/docs/theme/styles/">styles</a></li>
+<li>Available themes: <a href="opthemes.com">Opthemes</a>, <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">list by imathis</a></li>
+<li>Third party plugins <a href="https://github.com/imathis/octopress/wiki/3rd-party-plugins">list by imathis</a></li>
+<li>Useful blogs/articles:
+
+<ul>
+<li><a href="http://octopressthemes.com/blog/">The OctopressThemes Blog</a></li>
+<li><a href="http://blog.bigdinosaur.org/changing-octopresss-header/">Changing Octopress&rsquo;s Header</a></li>
+<li><a href="http://aijazansari.com/2012/08/27/how-to-customize-octopress-theme/">How to Customize Your Octopress Theme</a></li>
+<li><a href="http://time.to.pullthepl.ug/blog/2012/8/20/octopress-top-categories-plugin/">Octopress Top Categories Plugin</a></li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Write Blog Posts</h2>
+
+<h4>Useful Resources:</h4>
+
+<ul>
+<li><a href="https://help.github.com/articles/github-flavored-markdown">GitHub Flavored Markdown</a></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></li>
+<li>Markdown Editor: <a href="http://pad.haroopress.com/user.html">Haroopad</a></li>
+<li>Official Document about <a href="http://octopress.org/docs/blogging/plugins/">blog with plugins</a></li>
+</ul>
+
+
+<h4>Basic Commands:</h4>
+
+<p>Create a new blog post:
+<code>
+rake new_post["title"]
+</code>
+Create a new page:
+<code>
+rake new_page["title"]
+</code>
+Generate blog:
+<code>
+rake generate
+</code>
+Preview blog:
+<code>
+rake preview
+</code>
+Deploy blog to remote github repository (<em>master branch</em>)
+<code>
+rake deploy
+</code>
+Push source folder to remote github repository (<em>source branch</em>)
+<code>
+git add .
+git commit -m 'your message'
+git push origin source
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>
